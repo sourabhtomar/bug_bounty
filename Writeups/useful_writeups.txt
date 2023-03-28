@@ -1,0 +1,98 @@
+https://gowthams.gitbook.io/bughunter-handbook/list-of-vulnerabilities-bugs/recon-and-osint/sensitive-information-using-github
+https://hr-vicky.medium.com/what-is-xmlrpc-php-file-and-how-to-exploit-it-bugbounty-a302e770ae59
+https://medium.com/geekculture/params-discovering-hidden-treasure-in-webapps-b4a78509290f
+https://speakerdeck.com/aditya45
+https://medium.com/a-bugz-life/bug-hunting-methodology-from-an-average-bug-hunter-6eb7b5d41a6f
+https://web.archive.org/web/20190614232925/https://medium.com/intigriti/how-spending-our-saturday-hacking-earned-us-20k-60990c4678d4
+https://www.cobalt.io/blog/scope-based-recon-smart-recon-tactics
+https://medium.com/@Asm0d3us/weaponizing-favicon-ico-for-bugbounties-osint-and-what-not-ace3c214e139
+https://cscclabs.medium.com/log4j-vulnerability-150822e3b09c
+https://github.com/trimstray/the-book-of-secret-knowledge#hackingpenetration-testing-toc
+https://whoami.securitybreached.org/2019/06/03/guide-getting-started-in-bug-bounty-hunting/?fbclid=IwAR1XNYIoJj2WTq3PFm_FV5I13aXCXmTnt5nYlFoSVF1h0QcmPuUnGo9iCAA(must read regular)
+https://github.com/bugcrowd/bugcrowd_university
+https://kuldeep.io/posts/120-days-of-high-frequency-hunting/#local-file-inclusion-in-downloadphp
+https://hakin9.org/moriarty-project-this-tool-gives-information-about-the-phone-number-that-you-entered/(this tool give information about the phone number)
+https://ysamm.com/
+https://gowthams.gitbook.io/bughunter-handbook/getting-started-in-bug-bounties
+https://anotherhackerblog.com/ (for blogs like medium)
+https://github.com/streaak/keyhacks
+https://jeweled-lathe-d5e.notion.site/Resources-For-Bug-Bounty-14abca4df5be40838df4689afb384388
+https://blog.neolex.dev/13/
+https://r29k.com/
+https://thexssrat.medium.com/a-hunters-methodology-v5-0-4f52c7744d32
+https://github.com/daffainfo/AllAboutBugBounty
+https://letsautomate.it/article/understanding-http-request-headers/
+https://medium.com/geekculture/params-discovering-hidden-treasure-in-webapps-b4a78509290f(hidden pramas discovery writeup very imp must read and execute)
+https://medium.com/@casmpy/how-i-hacked-the-jee-coaching-website-and-shutdown-the-class-live-stream-e6eb8e1d22ac (for some tools usage must read again and use tools that he had explained)
+https://blog.zeddyu.info/2019/12/08/HTTP-Smuggling-en/
+https://knowledge-base.secureflag.com/
+https://gist.github.com/OTaKuHP/c0a8d8ca68842e30a2178a4ba5d8fc03
+https://hackxpert.com/index.php
+https://www.whiteoaksecurity.com/blog/authorization-testing-authmatrix-part-1/
+https://webs3c.com/t/the-beginner-guide-of-reconnaissance/178
+https://github.com/AnLoMinus/Bug-Bounty
+https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics-19#section-4.2.1
+https://github.com/zeroc00I/AllVideoPocsFromHackerOne/tree/main/weakness
+https://github.com/sa7mon/S3Scanner(S3 bucket finder)
+https://github.com/gwen001/s3-buckets-finder(S3 bucket finder)
+https://www.fakenamegenerator.com/(for testing purchase site and useful for fake random card generator)
+https://www.facebook.com/BrainHack.tech/videos/358350909722476{orwa godfather video}
+https://github.com/qazbnm456/awesome-web-security
+https://github.com/daffainfo/AllAboutBugBounty/blob/master/Technologies/WordPress.md
+https://github.com/imran-parray/Mind-Maps(some followed mindmap very imp take a look)
+https://cyberguy0xd1.medium.com/how-i-hacked-bbc-mail-servers-e61bb6faed2d
+https://resources.harshbothra.tech/(important resources harsh bothra)
+ https://whitton.io/articles/uber-turning-self-xss-into-good-xss/ (ye csrf poc me kaam aayega jab v me hunt krta hu or sochta hu ki samne wale ko logout kr k apne account m login kr lo code ki help se is article me code mil jayega
+ )
+ https://sharanthehunter.medium.com/g-map-api-key-exploitation-6fdf60fbb263 (google map)
+ https://swisskyrepo.github.io/PayloadsAllTheThingsWeb/#documentation(payload all the things best likehackbook)
+https://twitter.com/hetmehtaa/status/1587165323077509121(all in one resources for CEH practical)
+https://blog.projectdiscovery.io/ultimate-nuclei-guide/(ultimate nuclei hacks)
+https://0xm5awy.medium.com/how-i-found-8-vulnerabilities-in-24h-aad3bd5fd487
+https://github.com/daffainfo/match-replace-burp(bhot tagda maal hai ye)
+https://hackerone.com/reports/1624137(very easy log4j shell you should take a look at once)
+The resources are already out there.
+https://github.com/imran-parray/Mind-Maps
+https://github.com/riramar/Web-Attack-Cheat-Sheet
+https://www.bugbountyhunting.com/
+https://labs.detectify.com/2021/11/30/hakluke-creating-the-perfect-bug-bounty-automation/
+https://hacklido.com/t/web-security
+https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/
+https://portswigger.net/polls/top-10-web-hacking-techniques-2022
+https://d3adend.org/xss/ghettoBypass
+https://app.vidocsecurity.com/public-library
+https://0xkayala.medium.com/how-to-test-exposed-api-keys-using-nuclei-8d496eeeaec2
+https://uuidtools.com/decode
+
+@rootme_org
+ is free.
+@LetsDefendIO
+ is free.
+@Vulnmachines
+ is free.
+@hackthebox_eu
+ is free.
+@RealTryHackMe
+ is free.
+@OverTheWireCTF
+ is free.
+ https://sm4rty.medium.com/hunting-for-bugs-in-sign-up-register-feature-2021-c47035481212
+https://debprasadbanerjee502.medium.com/the-secret-trick-for-subdomain-enumeration-91b28be2b957
+https://gupta-bless.medium.com/everything-about-security-misconfiguration-7aa3d6d48687
+https://medium.com/@Hackfreaksofficial/finding-someone-elses-passwords-on-google-5bb609bac4dc(google dorks)
+https://medium.com/techiepedia/my-easiest-critical-bug-81c341a0d6d4(v.imp)
+https://weekly-bugbounty-content.beehiiv.com/
+https://github.com/0xmaximus/Galaxy-Bugbounty-Checklist
+https://www.houseofhackers.xyz/
+https://bugreader.com/
+https://github.com/imran-parray/Mind-Maps
+https://github.com/riramar/Web-Attack-Cheat-Sheet
+https://html5sec.org/
+https://gbhackers.com/top-500-important-xss-cheat-sheet/
+https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot
+https://github.com/s0md3v/AwesomeXSS/
+https://github.com/alexbieber/Bug_Bounty_writeups
+https://github.com/sudosuraz/Awesome-Hacking-Resources
+https://github.com/sudosuraz/Awesome-Hacking-Resources
+https://medium.com/@shubhayumajumdar/how-i-hacked-into-a-company-with-200-000-users-38c34e915792
+https://chat.openai.com/chat

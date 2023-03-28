@@ -1,0 +1,144 @@
+Technique 1: Active subdomain enumeration
+
+a. Bruteforcing subdomains using wordlist: In this technique we use a DNS wordlist to bruteforce a particular subdomain. This can easily be done using FFuF and Best DNS Wordlist(assetnote).
+
+Command: ffuf -u "https://FUZZ.target.com" -w <path_to_wordlist> -mc 200,301,302,403
+
+b. Permutation Bruteforce: In this technique we create a new resolved subdomain list from already known subdomains/domains by using permutation, mutation, and alteration with a wordlist. This can easily be done using altdns
+
+Command: altdns -i hackerone.txt -o data_output -r -s final.txt -w words.txt
+
+Technique 2: Favicon Hashes
+
+Favicons are icons that serve as branding to your website. Each Favicon has some unique hash values which can be used to gather domains with the same hash function. Favicon hashes are simple to calculate. FavFreak is one of the best tools which does this work for us.
+
+Command: cat urls.txt | python3 favfreak.py
+
+Once the hash is calculated, you can use the same on internet search engines such as shodan to get the mass websites.
+
+Command: http.favicon.hash:4568973
+
+Technique 3: Nrich
+
+A brilliant command line tool, Nrich, can be used to analyze IPs in a file for CVEs and open ports and vulnerabilities.
+
+Command: cat subdomains.txt | dnsx -a -resp-only | nrich -
+
+Technique 4: Choosing the right target
+
+Assume you have a medium scope application with a lot of subdomains. It is challenging to choose a subdomain and start hunting on this. No worries we have got you covered. You can use the interestingsubs gf pattern list to find interesting subdomains you can hunt upon.
+
+Command: cat urls.txt | gf interestingsubs
+
+Technique 5: Reverse Whoislookup
+
+This test will return WHOIS registration results for a DOMAIN name which can be used to gather all assets belonging to an organization.
+
+1-Perform whoislookup on target domain and look for Tech Email
+
+2-Visit drs.whoisxmlapi.com and Signup/Login (Initially you will get 500 free credits )
+
+3-Now Search with the Tech Email to discover all the assets belonging to target organization
+
+Technique 7: Finding hidden paths using meg
+
+Hidden paths or Directory bruteforcing is an important recon technique. Meg is a powerful tool that allows you to find hidden paths/directories very quickly without flooding traffic.
+
+Command: meg paths.txt hosts.txt output
+
+Technique 8: Finding open ports and services
+
+Command: naabu -host target.com
+
+------------------------------------------------------
+
+some more tips
+
+1--> source code goldmines
+
+Exposed source code is a goldmine, but don't limit yourself to just Git, some teams use Subversion, Mercurial, Bazaar & more
+
+
+
+#Checkforgit
+
+http://target/.git
+
+#check for subversion
+
+http://target/.svn
+
+#check for mercurial
+
+http://target/.hg
+
+#check for Bazaar
+
+http://target/.bzr
+
+#check for Darcs
+
+http://target/._darcs
+
+#check for bitkeeper
+
+http://target/bitkeeper
+
+2 ---> Recon
+
+Recon has just become easier! Find hidden assets by using this powerful Google dork to only return IP addresses!
+
+Be sure to use the 'gip' tool to automate the process
+
+Find assets companies don't want you t see by limiting Google to only return IP addresses. Use the new git tool to make this easy!
+
+https://0iq.me/gip/
+
+or
+
+https://github.com/SeifElsallamy/gip
+
+3----> Parameter modification
+
+Reminder: Don't just spray and pray. Try to figure why, when and where this behavior could occur and target your hunting that way! Good luck! 
+
+We all try to change the valies of parameters to find vulnerabilities but did you know that you can also try to change the name of the parameter
+
+?parameter=123
+
+=> 200OK
+
+?paramter[]=123
+
+=> Bypass protectionns?
+
+?parameter[id']=123
+
+=>sql injections?
+
+4----> Got a 302 and don't know what to do?
+
+Ever come across a domain responding with a 302 redirection?
+Don't just skip over it, there may be something there! 
+
+Found a domain responding with a 302 redirection? Perform a directory bruteforce. You may end up with some juicy files!
+
+http://sub.victim.com/
+
+==> 302 redirection to victim.com
+
+http://sub.victim.com/wp-config.php
+
+=> 200OK
+
+http://sub.victim.com/sensitive-data.txt
+
+=> 200OK
+
+5--> WAF bypass
+
+This tip will help you find the origin IP without any issues!
+Note: This will only work if the target have their own mail server.
+
+Bypass WAfs by finding the origin up opf the servers in email headers. Sign up, get verification mail and grab the origin ip, Profit guaranteed
+

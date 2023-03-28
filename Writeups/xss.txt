@@ -1,0 +1,15 @@
+https://www.ph.com/view_video.php?viewkey=ph62f6ff45e8990
+https://www.ehpus.com/post/xss-fix-bypass-10000-bounty-in-google-maps (xss best and simple writeup)
+https://brutelogic.com.br/blog/
+https://medium.com/@gguzelkokar.mdbf15/xss-via-account-takeover-in-e-signature-feature-worth-2500-435f3f8325bf
+https://infosecwriteups.com/how-i-was-able-to-find-50-cross-site-scripting-xss-security-vulnerabilities-on-bugcrowd-public-ba33db2b0ab1
+https://medium.com/@mohamedtarekq/defeat-the-httponly-flag-to-achieve-account-takeover-rxss-c16849d3d192
+https://omar0x01.medium.com/how-i-found-3-rxss-on-the-lululemon-bug-bounty-program-fa357a0154c2
+https://netsec.expert/posts/xss-in-2020/index.html
+https://mohamedtarekq.medium.com/defeat-the-httponly-flag-to-achieve-account-takeover-rxss-c16849d3d192
+https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPXSS.md
+https://infosecwriteups.com/how-i-was-able-to-find-50-cross-site-scripting-xss-security-vulnerabilities-on-bugcrowd-public-ba33db2b0ab1
+https://c4rrilat0r.medium.com/how-i-managed-to-trigger-xss-automatically-to-get-critical-account-takeover-92ea3abcaf9 (Critical xss to account takeover)
+-------------------------------Hackerone reports------------
+https://hackerone.com/reports/1663202
+https://twitter.com/beginnbounty/status/1629502265982701568(imp)

@@ -1,0 +1,14 @@
+1. Enumerate subdomains using subfinder
+subfinder -silent -d http://target.com > lists.txt
+2. Extract A records for the given list of subdomains using dnsx
+subfinder -silent -d http://target.com | dnsx -silent -a -resp-only > ips.txt
+3. Use httpx for ASN fingerprint
+subfinder -d http://target.com -silent | httpx -asn
+4. Returns URLs running HTTP webserver from subdomain list using httpx
+cat lists.txt | httpx > alive.txt
+Extensive port scan using naabu
+naabu -list alive.txt
+6. Run nuclei on interesting endpoints
+nuclei -list interesting.txt
+
+

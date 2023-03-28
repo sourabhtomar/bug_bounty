@@ -1,0 +1,23 @@
+RECOn 
+
+For collecting endpoints from javascript files, user GOSPIDER
+
+command --> gospider -s "https://example.com" -o output -c 10 -d 1 --other-source --include-subs
+
+for analyzing js files manually
+
+echo target.com | gau | grep '.js$' | httpx -status-code -mc 200 -content-type | grep 'application/javascript'
+
+Extract API endpoints from javascript files
+
+cat files.js | grep -aoP "(?<=(\"|\'|\))\\/[a-zA-Z0-9_?&=\\/\\-\\#\\.]*(?=(\\"|\\'|\\))" | sort -u
+
+some best articles for recon
+
+https://www.infosecmatter.com/bug-bounty-tips-4-aug-03/#2_find_javascript_files_using_gau_and_httpx
+
+https://www.offensity.com/de/blog/just-another-recon-guide-pentesters-and-bug-bounty-hunters/
+
+DNS Recon and Fuzzing with FFUF in one line
+
+curl -s http://crt.sh\?q\=\%.$1\&output\=json | jq -r '.[].name_value' | gsed 's/^/https:\/\//' | sort -u | xargs -n 1 -I{} ffuf -w ~/common.txt -u {}/FUZZ -t 70 > fuzzing_domain.txt

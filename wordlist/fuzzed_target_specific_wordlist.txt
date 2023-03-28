@@ -1,0 +1,52 @@
+use cewl
+
+Using waybackurls and gau
+
+$ echo http://target.com | gau | waybackurls > urls.txt
+$ cat urls.txt | wordlistgen | cut -f1 -d "." > wordlist.txt
+
+Using javascript files
+
+$ http://linkfinder.py -i http://Target.com -d -o cli | wordlistgen > wordlist.txt
+
+(link of tools➡️end of thread)
+
+Using Burp Extension
+
+Scavenger is a burp extension to create the wordlist from burp history which can be used for efficient fuzzing.
+
+How to find Origin IP Automatically🔭
+
+Censys
+
+$ censys search http://hackerone.com
+$ censys search http://hackerone.com | grep "ip" | egrep -v "description" | cut -d ":" -f2 | tr -d \"\, | httpx
+
+Shodan
+
+$ shodan search http://Ssl.cert.subject.CN:"http://hackerone.com" 200 — fields ip_str | httpx
+
+Uncover
+
+$ uncover -q "http://hackerone.com" -e censys,fofa,shodan,shodan-idb | httpx
+
+Favicon Hashes
+
+🔸Python script for generating the hash
+🔸 Using Fav-Up tool you can look up for real IP
+🔸 Using LiLi tool you can look up for real IP
+
+SecurityTrails
+
+You can explore complete current and historical data for any internet assets.
+
+DNS Records
+
+$ dig http://udemy.com A
+$ dig http://udemy.com MX
+
+
+https://dsopas.github.io/MindAPI/play/ (mind api)
+
+
+https://epieos.com

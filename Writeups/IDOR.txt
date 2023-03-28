@@ -1,0 +1,6 @@
+https://securityboat.in/insecure-direct-object-reference-idor/
+
+https://redmethod.hashnode.dev/idor-broken-authentication
+
+https://manieshneupaneinfosec.blogspot.com/2022/07/idor-broken-authentication.html
+https://secops.group/blog/exploiting-idors-a-compilation-of-some-neat-new-and-crazy-examples

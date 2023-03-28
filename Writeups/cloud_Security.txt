@@ -1,0 +1,5 @@
+https://github.com/4ndersonLin/awesome-cloud-security
+https://github.com/Funkmyster/awesome-cloud-security
+https://github.com/toniblyx/my-arsenal-of-aws-security-tools
+https://github.com/jassics/awesome-aws-security
+https://github.com/Metarget/awesome-cloud-security

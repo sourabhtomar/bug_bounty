@@ -1,0 +1,16 @@
+https://notifybugme.medium.com/finding-ssrf-by-full-automation-7d2680091d68
+https://notifybugme.medium.com/chaining-an-blind-ssrf-bug-to-get-an-rce-92c09de3c0ba
+https://infosecwriteups.com/svg-ssrfs-and-saga-of-bypasses-777e035a17a7
+https://corben.io/fun-ssrf-via-headless-browser/
+https://sirleeroyjenkins.medium.com/just-gopher-it-escalating-a-blind-ssrf-to-rce-for-15k-f5329a974530
+https://github.com/jdonsec/AllThingsSSRF
+https://infosecwriteups.com/https-weekly-infosecwriteups-com-iw-weekly-7-facebook-account-takeover-java-deserialization-ssrf-and-more-adb10046c646
+https://h.43z.one/ipconverter/
+https://medium.com/techfenix/ssrf-server-side-request-forgery-worth-4913-my-highest-bounty-ever-7d733bb368cb
+https://medium.com/@0x0Asif/how-i-found-my-first-rce-8f8033883dc4
+https://portswigger.net/research/http-desync-attacks-request-smuggling-reborn
+https://medium.com/techfenix/ssrf-server-side-request-forgery-worth-4913-my-highest-bounty-ever-7d733bb368cb
+https://blog.appsecco.com/server-side-request-forgery-ssrf-and-aws-ec2-instances-after-instance-meta-data-service-version-38fc1ba1a28a
+------------------hackerone report-----
+https://hackerone.com/reports/247680
+https://hackerone.com/reports/644238

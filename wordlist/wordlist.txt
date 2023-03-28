@@ -1,0 +1,89 @@
+https://wordlists.assetnote.io/
+https://github.com/assetnote/
+https://github.com/chrislockard/api_wordlist
+https://github.com/Karanxa/Bug-Bounty-Wordlists
+https://medium.com/@vamshivaran110/fuzzing-with-custom-wordlists-bb7a808d943f
+https://github.com/buggysolid/bugbounty-wordlist
+https://wordlists-cdn.assetnote.io/data/manual/
+https://github.com/xmendez/wfuzz/tree/master/wordlist
+https://wordlists.assetnote.io (most of the wordlsit jason uses)
+
+swagger-wordlist.txt
+seclists_api_endpoints.txt
+
+you might also want check for specifi wordlists based on the technology that you identified 
+eg:- Django, flask, rails, coldfusio, apache, nginx etc - just check assetnote for specific wordlists
+
+
+https://github.com/trickest/wordlists/tree/main/technologies?utm_content=160362969&utm_medium=social&utm_source=twitter&hss_channel=tw-1264663661655789569
+
+https://docs.google.com/spreadsheets/d/1jn3JnWzQFZW41gKo5Fhxwf2ke2w-pvrpCGhBmKhyIBE/edit#gid=0
+
+subfinder -d disney.com -silent -all | httpx -silent -o disney_httpx.txt; for i in $(cat disney_httpx.txt); do DOMAIN=$(echo $i | unfurl format %d); ffuf -u $i/FUZZ -w common_api_endpoints.txt -o ${DOMAIN}_ffuf.txt; done
+
+curl https://lahitapiolarahoitus.fi/?_method=GET -d rest_route=/wp/v2/users
+
+api wordlists--->
+
+1-> Seclists:
+
+https://github.com/danielmiessler/Seclists/tree/master/Discovery/web-content/api
+
+https://github.com/danielmiessler/Seclists/blob/master/Discovery/Web-content/common-api-endpoints-mazen160.txt
+
+2-> Fuzzdb
+
+https://github.com/fuzzdb-project/fuzzdb/blob/master/discovery/common-methods/common-methods.txt
+
+3-> Seclist RAFT words 
+
+https://github.com/danielmiessler/Seclists/blob/master/Discovery/Web-Content/raft-small-words.txt
+
+users/all
+
+
+
+BE Servers no longer responsible for protecting against XSS. APIs don't return HTML, but JSON instead. If API returns XSS payload? - E.g: {"name":"In<script>alert(21)</script>on}
+
+
+    Wrap ID with an array {“id”:111} --> {“id”:[111]}
+    JSON wrap {“id”:111} --> {“id”:{“id”:111}}
+    Send ID twice URL?id=<LEGIT>&id=<VICTIM>
+    Send wildcard {"user_id":"*"}
+
+    https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af
+    https://hackanythingfor.blogspot.com/2020/07/api-testing-checklist.html?spref=tw
+
+
+    ProgrammableWeb (https://www.programmableweb.com) is the go-to source for
+API-related information
+
+
+https://github.com/hAPI-hacker/Hacking-APIs (fuzz api documentation if not available)
+
+{}[]|\:";'<>?,./ (payload to get an unexpected error)
+
+Abhishek Meena
+@Aacle_
+·
+9h
+Which features do you find tend to be more vulnerable? I'll start:
+
+1. Organization's user management
+2. Export to CSV/HTML/PDF
+3. Custom views of dashboards
+4. Sub user creation&management
+5. Object sharing (photos, posts,etc)
+
+
+Fuzz :
+/api/v1/0.0.1/users/***
+/api/v1/0.0.2/0.1/users/***
+/apis/users/0-0-0/0.0.1
+/apis/users/0.0.1/1.0.0
+
+https://pentestbook.six2dez.com/enumeration/webservices/apis
+
+https://drive.google.com/file/d/1iMGqUUpaiQrEys4IOETwgxti8AiShomZ/view(api testing writeups)
+
+https://whimsical.com/kartik-gupta-7se1K8FvRhSqtUASDbrVuR

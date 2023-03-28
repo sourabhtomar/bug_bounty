@@ -1,0 +1,128 @@
+Capture the Flag (CTF) Platforms
+
+    HackTheBox — https://www.hackthebox.eu/
+    TryHackMe — https://tryhackme.com/
+    VulnHub — https://www.vulnhub.com/
+    Hack.me — https://hack.me/
+    CTF365 — https://ctf365.com/
+    CTFtime — https://ctftime.org/
+    Root-Me — https://www.root-me.org/
+    OverTheWire — https://overthewire.org/
+    Exploit Exercises — https://exploit-exercises.com/
+    Pwnable.kr — http://pwnable.kr/
+    SmashTheStack — http://smashthestack.org/
+    RingZer0 Team Online CTF — https://ringzer0ctf.com/
+    Hacker101 CTF — https://ctf.hacker101.com/
+    CTFlearn — https://ctflearn.com/
+    http://Hacking-lab.com — https://www.hacking-lab.com/
+    CyberDefenders — https://www.cyberdefenders.org/
+    Root Me Mobile — https://www.root-me.org/en/Challenges/Mobile/
+    http://Websec.fr — https://www.websec.fr/
+    CTF4Hire — https://ctf4hire.com/
+    RITSEC CTF — https://ctf.ritsec.club/
+    TJCTF — https://tjctf.org/
+    Hacking-Lab Junior — https://www.hacking-lab.com/events/441-junior.html
+
+Wargame Sites
+
+    Hacksplaining — https://www.hacksplaining.com/exercises
+    CyberSecLabs — https://cyberseclabs.co.uk/
+    Damn Vulnerable Web App (DVWA) — https://github.com/ethicalhack3r/DVWA
+    Google Gruyere — https://google-gruyere.appspot.com/
+    OWASP Juice Shop — https://owasp.org/www-project-juice-shop/
+    OWASP Mutillidae II — https://sourceforge.net/projects/mutillidae/
+    WebGoat — https://owasp.org/www-project-webgoat/
+    Game of Hacks — https://www.gameofhacks.com/
+    bWAPP — http://www.itsecgames.com/
+    PicoCTF — https://picoctf.com/
+    Enigma Group — https://www.enigmagroup.org/
+    HackThis!! — https://www.hackthis.co.uk/
+    Dark-IT — https://darkit.org
+
+Practice Labs
+
+    Cybrary — https://www.cybrary.it/
+    Virtual Hacking Labs — https://www.virtualhackinglabs.com/
+    PentesterLab — https://pentesterlab.com/
+    Penetration Testing Practice Labs — https://www.cybrary.it/catalog/practice-labs/
+    Pentestit — https://pentestit.ru/
+    Vulnerable by Design — https://www.vulnerablebydesign.com/
+    Pentester Academy — https://www.pentesteracademy.com/
+
+Exploit Development
+
+    Exploit Database — https://www.exploit-db.com
+    Metasploit Unleashed — https://www.offensive-security.com/metasploit-unleashed/
+    Immunity Debugger — https://www.immunityinc.com/products/debugger/
+    WinDbg — https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/debugger-download-tools
+    OllyDbg — http://www.ollydbg.de/
+    Radare2 — https://rada.re/n/
+    IDA Pro — https://www.hex-rays.com/products/ida/
+    FuzzDB — https://github.com/fuzzdb-project/fuzzdb
+    Wfuzz — https://github.com/xmendez/wfuzz
+    Burp Suite — https://portswigger.net/burp
+    sqlmap — http://sqlmap.org/
+    Nessus — https://www.tenable.com/products/nessus
+    OpenVAS — https://www.openvas.org/
+    Kali Linux — https://www.kali.org/
+    Penetration Testing Execution Standard (PTES) — http://www.pentest-standard.org/index.php/Main_Page
+
+Forensics
+
+    SANS Digital Forensics and Incident Response — https://www.sans.org/cyber-security-courses/digital-forensics/
+    Cellebrite UFED Physical Analyzer — https://www.cellebrite.com/en/ufed-physical-analyzer/
+    Wireshark — https://www.wireshark.org/
+    Volatility — https://www.volatilityfoundation.org/
+    The Sleuth Kit — https://www.sleuthkit.org/
+    Ghiro — https://github.com/ghirensics/ghiro
+    Autopsy — https://www.sleuthkit.org/autopsy/
+    OSForensics — http://www.osforensics.com/
+    DEFT Linux — http://www.deftlinux.net/
+
+Social Engineering
+
+    http://Social-Engineer.org — https://www.social-engineer.org/
+    Social-Engineer Toolkit (SET) — https://github.com/trustedsec/social-engineer-toolkit
+    King Phisher — https://github.com/securestate/king-phisher
+    BeEF — https://github.com/beefproject/beef
+    Evilginx — https://github.com/kgretzky/evilginx
+    The Harvester — https://github.com/laramies/theHarvester
+
+Networking
+
+    tcpdump — https://www.tcpdump.org/
+    Wireshark — https://www.wireshark.org/
+    Netcat — https://nc110.sourceforge.io/
+    hping3 — https://tools.kali.org/information-gathering/hping3
+    Scapy — https://scapy.net/
+    Cain and Abel — https://www.oxid.it/cain.html
+    Ettercap — https://ettercap.github.io/ettercap/
+    Aircrack-ng — https://www.aircrack-ng.org/
+    Kismet — https://www.kismetwireless.net/
+    Nmap — https://nmap.org/
+
+Wireless
+
+    Wifite — https://github.com/derv82/wifite2
+    Reaver — https://github.com/t6x/reaver-wps-fork-t6x
+    Bully — https://github.com/aanarchyy/bully
+    Fluxion — https://github.com/FluxionNetwork/fluxion
+    Pixiewps — https://github.com/wiire/pixiewps
+    hcxdumptool — https://github.com/ZerBea/hcxdumptool
+    Krackattacks-scripts — https://github.com/vanhoefm/krackattacks-scripts
+
+Cryptography
+
+    Cryptopals — https://cryptopals.com/
+    CrypTool — https://www.cryptool.org/en/
+    Hashcat — https://hashcat.net/hashcat/
+    John the Ripper — https://www.openwall.com/john/
+    OpenSSL — https://www.openssl.org/
+    RSA Laboratories — https://www.rsa.com/
+    Crypto++ — https://www.cryptopp.com/
+    GnuPG — https://gnupg.org/
+    OpenSSL Cookbook — https://www.feistyduck.com/books/openssl-cookbook/
+    The Code Book by Simon Singh — https://simonsingh.net/books/the-code-book/
+    Cryptography I and II on Coursera — https://www.coursera.org/learn/crypto
+
+Please note that some of these sites and tools may require some technical knowledge to use, and you should always ensure that you have permission to use them. Additionally, practicing ethical hacking should always be done in a safe and legal manner, with respect for the privacy and security of others.

@@ -1,0 +1,43 @@
+https://bugreader.com/reports
+https://github.com/Proviesec/google-dorks
+https://github.com/reddelexc/hackerone-reports
+
+@Bugcrowd's LevelUP YT Playlists, 
+@zseano website & methodology,
+@pdiscoveryio
+ tools, 
+@PentesterLab labs, 
+@KathanP19 gitbook, 
+@gregxsunday bug bounty report explained
+@InfoSecComm NL, and some books from other creators,
+@Jhaddix threads, 
+@NahamSec YT video & course, 
+@PortSwigger web sec academy,
+@stokfredrik YT videos etc
+
+https://samcurry.net/hacking-apple/
+https://pentester.land/writeups/
+Go to: https://tryhackme.com/hacktivities?tab=search and search for "bypass"
+practice on portswigger
+https://github.com/Voorivex/pentest-guide(awesome repo)
+https://gowsundar.gitbook.io/book-of-bugbounty-tips/cross-site-scripting-xss
+
+uncover tool kali me download krna hai
+
+https://www.paypal.com/in/smarthelp/article/why-hasn't-my-paypal-balance-been-deposited-to-my-indian-bank-account-faq1297
+
+https://weekly-bugbounty-content.beehiiv.com/
+
+https://github.com/0xmaximus/Galaxy-Bugbounty-Checklist
+https://www.houseofhackers.xyz/
+https://bugreader.com/
+https://github.com/imran-parray/Mind-Maps
+
+https://github.com/riramar/Web-Attack-Cheat-Sheet
+https://html5sec.org/
+https://gbhackers.com/top-500-important-xss-cheat-sheet/
+https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot
+https://github.com/s0md3v/AwesomeXSS/
+https://github.com/alexbieber/Bug_Bounty_writeups
+https://github.com/sudosuraz/Awesome-Hacking-Resources
+https://github.com/sudosuraz/Awesome-Hacking-Resources

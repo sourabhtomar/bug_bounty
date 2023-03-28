@@ -1,0 +1,26 @@
+So many beginners ask what to do after finding subdomains 🧵
+1. Do directory search
+2. Do Github dork
+3. Do google dork
+4. FUZZ for params
+5. FUZZ for vhosts
+6. Find Wayback data (gau, waybackurl)
+7. Find javascript files
+8. Do subdomain crawling (gospider, hakrawler)
+9. Send all crawl data to burp
+10. send all wayback, gau data to burp
+11. send all js files to burp
+12. check params for bug in burp repeater
+13. FUZZ with paraminer to find more params
+14. Found PHP,asp,aspx dirs FUZZ for more other dirs. Run param miner hire to finde somthing.asp?FUZZ=1 
+
+if found any param check for SQLi, XSS, cmd injection etc
+15. Found 401/403 pages send it to repeater try to bypass it with ..; or ; etc spend time on it
+16. Found params and tested everything and don't know what to do next: send the request to the intruder -> select param -> right click and select scan insertion point
+17. Run active scan with some extension like active scan++, etc to find some bugs
+18. Found directory in a subdomain but don't found much : Do google dork on that domain to find params, github dork etc
+19. Check JS files for secret, tokens, api keys etc
+
+
+20. Try every URLs/pages with privileged Account and then with Low priv Account -> Broken Access Control Bug
+21. Automate with Authorize (Burp ext)

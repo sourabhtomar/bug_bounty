@@ -1,0 +1,1 @@
+ https://www.cyberick.com/post/bypass-captcha-using-turbo-intruder-leads-to-bruteforce-attack-bug-bounty

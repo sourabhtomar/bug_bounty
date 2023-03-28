@@ -1,0 +1,5 @@
+https://github.com/payloadbox/command-injection-payload-list
+
+https://as745591.medium.com/albussec-penetration-list-06-command-injection-sample-1f998ce9374d
+
+https://hackerone.com/reports/1360208

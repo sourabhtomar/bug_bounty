@@ -1,0 +1,15 @@
+SECLISTS(for api):  
+-----------------There are the wordlist of apis----------------
+1-https://github.com/danielmiessler/SecLists/tree/master/Discovery/Web-Content/api
+
+2-https:https://github.com/danielmiessler/Seclist/tree/master/Discovery/Web-Content/common-api-endpoints-mazen160.txt
+
+FUZZDB(for api):
+
+1- https://github.com/fuzzdb-project/fuzzdb/blob/master/discovery/common-methods/common-methods.txt
+---------------------------------------------
+
+------------This one is the list of words------
+Seclists raft words:
+
+https:https://github.com/danielmiessler/Seclist/tree/master/Discovery/Web-Content/raft-small-words.txt

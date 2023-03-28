@@ -1,0 +1,15 @@
+https://inonst.medium.com/a-deep-dive-on-the-most-critical-api-vulnerability-bola-1342224ec3f2
+https://gowsundar.gitbook.io/book-of-bugbounty-tips/api
+https://community.turgensec.com/finding-hidden-api-keys-how-to-use-them/
+https://medium.datadriveninvestor.com/api-security-testing-part-1-b0fc38228b93 
+https://infosecwriteups.com/31-tips-api-security-pentesting-480b5998b765
+https://docs.google.com/spreadsheets/d/1jn3JnWzQFZW41gKo5Fhxwf2ke2w-pvrpCGhBmKhyIBE/edit#gid=0
+https://inonst.medium.com/a-deep-dive-on-the-most-critical-api-vulnerability-bola-1342224ec3f2
+https://github.com/inonshk/31-days-of-API-Security-Tips
+
+
+fuzzing =
+/api/v1/0.0.1/users/***
+/api/v1/0.0.2/0.1/users/***
+/apis/users/0-0-0/0.0.1
+/apis/users/0.0.1/1.0.0

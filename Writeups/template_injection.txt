@@ -1,0 +1,2 @@
+https://akshukatkar.medium.com/rce-with-flask-jinja-template-injection-ea5d0201b870
+https://systemweakness.com/c-s-t-i-lead-to-account-takeover-f21ea07d9141

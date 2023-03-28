@@ -1,0 +1,4 @@
+https://shahjerry33.medium.com/github-recon-its-really-deep-6553d6dfbb1f
+https://github.com/ngalongc/bug-bounty-reference
+Tip: - always check company's/Organization employees GitHub account for leaked ghp_ token,
+and check access to each repo of main organization

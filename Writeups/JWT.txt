@@ -1,0 +1,4 @@
+https://0xn3va.gitbook.io/cheat-sheets/web-application/json-web-token-vulnerabilities
+https://systemweakness.com/hacking-jwt-d29f39e202d5
+https://github.com/wallarm/jwt-secrets/blob/master/jwt.secrets.list
+https://gowthamaraj-rajendran.medium.com/all-about-jwt-attacks-tools-included-8841c0a48b34

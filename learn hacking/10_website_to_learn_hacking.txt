@@ -1,0 +1,21 @@
+10 Websites/Platforms
+to Learn Hacking
+1. HackTheBox Cybersecurity Training
+Platform
+2. Tryhackme - Hands on Exercise and
+Labs
+3. Cybrary - Videos, Labs, and Practice
+Exams
+4. Vulnhub - Materials for Hands on
+5. Try2hack - Gaming based on Real
+Attacks
+6. OverTheWire Security Concepts via
+Challenges
+7. Vulnmachines - Real World
+Scenarios to Practice
+8. RangeForce
+Hands on Exercises,
+Interactive
+9. CyberSecLabs - Training Labs
+10. Root Me - Over 400 Cybersecurity
+Challenges

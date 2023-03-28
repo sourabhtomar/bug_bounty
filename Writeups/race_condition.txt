@@ -1,0 +1,62 @@
+Race Conditions Vulnerability
+
+->  This is a type of security issue that occurs when multiple processes or threads access shared resources at the same time. 
+
+-> The result can be unpredictable and can lead to data corruption or unauthorized access.
+
+Execution
+
+A race condition occurs when two or more processes are racing to access a shared resource. The outcome of the race is unpredictable and can depend on many factors, including the speed of the processes, the order in which they access the resource, and the timing.
+
+Three types of Race Conditions: 
+
+1. Time of Check to Time of Use (TOCTTOU)
+2. Time of Use to Time of Check (TOUTTOC)
+3. Time of Check to Time of Check (TOCTTOC)
+
+ Time of Check to Time of Use (TOCTTOU)
+
+It happens when a program checks the state of a resource, then makes decisions based on that state. 
+
+However, between the time of checking and using the resource, the state may have changed. This can lead to unintended consequences.
+
+Example of TOCTTOU:
+
+Imagine a banking application that checks if a user has enough funds to make a withdrawal. An attacker can race the application by depositing money after the check but before the withdrawal. Resulting in, the attacker withdrawing more money than they have.
+
+Time of Use to Time of Check (TOUTTOC)
+
+It happens when a program uses a resource before checking its state. 
+
+This can lead to unexpected results if the state changes between the time of use and the time of check.
+
+Example of TOUTTOC:
+
+Imagine a file upload application that checks the file type before uploading it. 
+
+An attacker can race the application by modifying the file after it has been uploaded but before it is checked.
+
+This can result in the attacker uploading a malicious file.
+
+Time of Check to Time of Check (TOCTTOC)
+
+It happens when two processes check the state of a resource at the same time. 
+
+Both processes may make decisions based on the same state, which can lead to conflicts and security issues.
+
+
+A very known example is privilege escalation where a user's privilege level is checked when running a command, allowing an attacker to race to change their privilege level before the command is executed.
+
+Writeups Links:
+
+1. Duplicate payouts
+https://hackerone.com/reports/220445
+
+2. Redeeming gift cards multiple times 
+https://hackerone.com/reports/759247
+
+3. Adobe Flash Vulnerability
+https://hackerone.com/reports/37240
+
+4. RC in OAuth 2 API
+https://hackerone.com/reports/55140

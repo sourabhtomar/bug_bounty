@@ -1,0 +1,19 @@
+https://github.com/sqlmapproject/sqlmap/issues/4091
+https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet/tree/main/Error%20Based%20SQLi
+https://deb0con.medium.com/how-i-earned-a-6000-bug-bounty-from-cloudflare-db6949e39cf7
+https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPSQLI.md(top 300 reports on sql injection)
+https://gerbenjavado.com/manual-sql-injection-discovery-tips
+https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet
+https://systemweakness.com/how-i-exploited-sql-injection-to-sql-shell-with-in-15-minutes-c3d847d2c632(Sql injection)
+https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPSQLI.md
+https://adityashende17.medium.com/finding-time-based-sqli-injections-edition-2023-8e079127b56a
+
+If you want good examples for SQL injection, use these.
+
+Auth Bypass: admin'; -- -
+
+SELECT * FROM users WHERE username = 'admin'; -- -' AND password = 'password'
+
+Boolean: ' AND '1'='1 / ' AND '1'='2
+
+SELECT * FROM articles WHERE author = 'admin' AND '1'='1'

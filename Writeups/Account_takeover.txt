@@ -1,0 +1,9 @@
+https://logicbomb.medium.com/otp-bypass-account-takeover-to-admin-panel-ft-header-injection-16f2982a0136
+https://blog.usamav.dev/two-account-takeover-bugs-worth-4300-dollar-bounty#heading-the-target-web-application-has-some-features-including-but-not-limited-to(one of the best blog you will learn alot)
+https://speakerdeck.com/harshbothra/tale-of-chaining-bugs-for-account-takeover
+https://medium.com/@nakah_/what-i-learned-from-reading-150-account-takeover-writeups-7589fae9fbc3
+https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/
+https://systemweakness.com/zero-click-to-account-takeover-idor-xss-98dd6cce63c4
+
+-------------------hackerone reports---------------
+https://hackerone.com/reports/1245762

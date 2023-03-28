@@ -1,0 +1,2 @@
+https://infosecwriteups.com/hacking-the-wordpress-sites-for-fun-and-profit-part-1-water-7ba474ced0f8 (whenever u need and want a fuzzing in wordpress side simple check this)
+

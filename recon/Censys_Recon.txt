@@ -1,0 +1,58 @@
+search.censys.io
+
+search ==> tesla.com
+
+(tesla.com) abd autonomous_system.name="TESLA"
+
+Keep in mind, even though this 2nd search only shows 24 results, we basically "can still" expand the search by looking at hosts with a /24 subnet of every host identified on censys.
+
+For example, in the top two results, we get IPs 8.**.124.215 and 8.**.24.153. From a broader perspective, we basically have targets at 8.**.124.0/24 and 8.**.24.0/24. And in practice, we take these two segments to a tool like DNSDumpster to identify their validity (that is, really belong to the target or not).
+
+Validate the IP Block obtained
+
+https://dnsdumpster.com
+
+search 199.66.9.0/24 
+
+you can see there is tesla
+
+
+http://www.firstsight.me/2022/03/from-recon-via-censys-and-dnsdumpster-to-getting-p1-by-login-using-weak-password-password/(very important)
+https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/
+https://orwaatyat.medium.com/
+found ips and save it to one text file
+
+
+
+
+
+http://www.firstsight.me/2022/03/from-recon-via-censys-and-dnsdumpster-to-getting-p1-by-login-using-weak-password-password/
+
+https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/
+
+------------------------------------------------------------------
+
+censys -->
+
+Certificates for xyz123boot.com: parsed.names: xyz123boot.com
+Just show valid ones: tags.raw: trusted
+
+Combining multiple parameters on Censys can be done by using simple Boolean logic.
+
+Search term: parsed.names: xyz123boot.com and tags.raw: trusted
+
+
+----------------------------
+
+Security trails
+A platform doing exactly this is SecurityTrails. Just enter the website domain into the search field and press enter. The "Historical Data" can be found in the sidebar on the left side.
+the origin server IP will be in the MX records
+
+
+Maybe use censys  parsed.names.raw: "xx.xx.xx.xx" 
+
+http://ssl.cert.subject.CN:"*.target. com" http.title:"index of/"
+
+http://ssl.cert.subject.CN:"*.target. com" http.title:"gitlab"
+
+http://ssl.cert.subject.CN:"*.wur.nl" http.title:"gitlab"

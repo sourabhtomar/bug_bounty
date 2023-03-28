@@ -1,0 +1,6 @@
+https://infosecwriteups.com/all-about-multi-factor-authentication-security-bypass-f1a95f9b6362
+https://github.com/0xInfection/Awesome-WAF
+https://github.com/0xInfection/Awesome-WAF#known-bypasses
+
+----------------hackeerone reports----------
+https://hackerone.com/reports/178293
