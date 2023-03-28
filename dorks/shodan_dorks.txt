@@ -1,0 +1,35 @@
+https://medium.com/@nynan/shodan-for-bug-bounty-and-why-you-shouldnt-use-these-53-dorks-bfa347285b61
+
+- shodan dork :
+- ssl:"target[.]com" 200 http.title:"dashboard"
+Tips: 
+Try the simplest things
+
+- Shodan dork:
+ssl:"target[.]com" http.title:"index of / " 
+I was redirected to the login page _ port: 8888
+
+ - Username: admin2
+ -  Password: 123456 
+
+Boom access to the admin panel
+
+http.title:"admin panel" org:<TARGET ORGANIZATION>
+
+"http.title:\"index of\" AND org:<TARGET ORGANIZATION>"
+
+"http.title:\"Dashboard [Jenkins]\" AND org:<TARGET ORGANIZATION>"
+
+"http.title:\"login\" AND org:<TARGET ORGANIZATION>"
+
+>>"default password" org:orgName
+
+>>"230 login successful" port:"21" org:OrgName
+>>vsftpd 2.3.4 port:21 org: OrgName
+
+>>230 'anonymous@' login ok org:0rgName
+
+>>guest login ok org: OrgName
+
+>>country:EU port:21 -530 +230 +0rgName
+>>country:IN port:80 title:protected org:0rgName

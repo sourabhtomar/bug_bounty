@@ -1,0 +1,197 @@
+https://github.com/Proviesec/google-dorks
+https://github.com/BullsEye0/google_dork_list/blob/master/google_Dorks.txt
+https://dorks.faisalahmed.me/#
+https://blog.blockmagnates.com/how-to-master-google-hacking-dorking-bd9b6e3d28fa
+https://github.com/TakSec/google-dorks-bug-bounty
+
+inurl:/wp-admin/admin-ajax.php site:blog.*
+
+site:*.target.com inurl:http register signup
+
+inurl:.gov password | credential | username filetype:log
+
+inurl:nokia not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:pdf
+
+inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private | WS_FTP | ws_ftp | log | LOG filetype:log
+
+inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:xls
+
+inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:csv
+
+inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:doc
+
+inurl:.gov not for distribution | confidential | “employee only” | proprietary | top secret | classified | trade secret | internal | private filetype:txt
+
+https://github.com/Proviesec/google-dorks
+
+
+site:example.com inurl:register,
+
+Try to find apps that allow you to register or sign up for an account. I like words like: register, signup, login, auth, authenticate, logout, signin, profile, account, dashboard, panel, admin, forgot, reset, forgotpw, password, email
+
+site:example.com -ext:pdf -ext:html
+
+site:example.com inurl:management
+
+site:example.com inurl:xyz
+This one isn’t dumb, I promise. Change “xyz” to a 2–4 letter acronym for a product or service offered by your target
+
+site:example.com intext:"Example, Inc. All rights reserved."
+
+site:example.com filetype:jsp
+
+inurl:"/wp-json/wp/v2/users" Finds all publicly available
+WordPress API user directories
+intitle:"index.of" intext:"api.txt" Finds publicly available API
+key files
+inurl:"/includes/api/" intext:"index of /" Finds potentially interesting API
+directories
+ext:php inurl:"api.php?action=" Finds all sites with a XenAPI SQL
+injection vulnerability (This query
+was posted in 2016; four years
+later, there were 141,000 results.)
+intitle:"index of" api_key OR "api key" OR
+apiKey -pool
+Lists potentially exposed API keys
+(This is one of my favorite queries
+
+then simply search site:*.domain.com and get juicy information Index of /conf/logs/
+---------------------------For finding admin panel----------------
+
+site: target.com inurl: admin | administrator | adm | login | l0gin | wp-login
+
+intitle: "login" "admin" site: target.com
+
+intitle: "index of / admin" site: target.com
+
+inurl: admin intitle: admin intext: admin
+
+Using utilities:
+
+https://github.com/the-c0d3r/admin-finder
+https://github.com/RedVirus0/Admin-Finder
+https://github.com/mIcHyAmRaNe/okadminfinder3
+https://github.com/penucuriCode/findlogin
+https://github.com/fnk0c/cangibrina
+
+
+ Using search engines:
+
+- Shodan:
+
+ssl.cert.subject.cn:"company.com "http.title:" admin "
+
+ssl: "company.com" http.title: "admin"
+
+ssl.cert.subject.cn:"company.com "admin
+
+ssl: "company.com" admin
+.
+
+Fofa:
+
+cert = "company.com" && title = "admin"
+
+cert.subject = "company" && title = "admin"
+
+cert = "company.com" && body = "admin"
+
+.
+
+.
+
+- ZoomEye:
+
+ssl: company.com + title: "admin"
+
+ssl: company.com + admin
+.
+
+.
+
+- Censys (IPv4):
+
+(services.tls.certificates.leaf_data.issuer.common_name: company.com) AND services.http.response.html_title: admin
+
+(services.tls.certificates.leaf_data.issuer.common_name: company.com) AND services.http.response.body: admin
+
+
+
+some intigriti google dorks
+
+intext: "© copyright intigriti 2022"
+
+let say you have found some credentials for your target, but you don't know where to use them. This google dork will help you
+
+site: target.com
+intext: login
+intext: username
+intext: password
+
+3:- site:target.com ext: xlsx
+
+4:- intext: "index of /.git" "parent directory"
+
+This is very simple one. but try to look for backup
+
+5:- filetype: .bak
+
+
+6:- .s3.amazonaws.com "compay"  (for s3 bucket)
+
+7:- intext: "powered by gila CMS" (for cves)
+
+8:- site: target.com intext: "warning: mysql_num_row"
+
+9:- "Index of /" +".htaccess"
+
+10:- site:target.com ext:pdf intext:confidential
+
+Dork site:=.*.*.wur.nl inurl:login | inurl:signin | intitle:Login | intitle:”sign in” | inurl:auth
+
+Google Dorks - Cloud Storage:
+
+site:http://s3.amazonaws.com "target[.]com"
+site:http://blob.core.windows.net "target[.]com"
+site:http://googleapis.com "target[.]com"
+site:http://drive.google.com "target[.]com"
+
+
+-----------------------------------------------------------------------------------------------
+Here is how to find sensitive data issues:
+
+1) publicly exposed documents :- site:http://target.com ext:doc | ext:docx | ext:odt | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
+
+2) Directory listing bug :- site:http://target.com intitle:index.of
+
+3) Configuration files :- site:http://target.com ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini | ext:env
+
+4) database file exposed :- site:http://target.com ext:sql | ext:dbf | ext:mdb
+
+5) Log files exposed :- site:http://target.com ext:log
+
+6) Backup and old files :- site:http://target.com ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+
+
+
+7) login page of admin pannel :- site:http://target.com inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
+
+8) php errors/warning :- site:http://target.com "PHP Parse error" | "PHP Warning" | "PHP Error"
+
+10) phpinfo() :- site:http://target.com ext:php intitle:phpinfo "published by the PHP Group"
+
+11) signup page :- site:http://target.com inurl:signup | inurl:register | intitle:Signup
+12) find subdomain :- site:*.target.com
+13) find sub-subdomain :- site:*.*.target.com
+
+14) searchgithub and http://gitlab.com :- site:http://github.com | site:http://gitlab.com "http://target.com"
+
+15) search http://stakoverflow.com :- site:http://stackoverflow.com "http://target.com"
+
+16) 17) find ip address :- (http://target.com) (site:*.*.29.* |site:*.*.28.* |site:*.*.27.* |site:*.*.26.* |site:*.*.25.* |site:*.*.24.* |site:*.*.23.* |site:*.*.22.* |site:*.*.21.* |site:*.*.20.* |site:*.*.19.* |site:*.*.18.* |site:*.*.17.* |site:*.*.16.* |site:*.*.15.* )
+
+9) sql error :- site:site.com1 intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
+
+Google Dork - XSS 🔍
+
+inurl:q= | inurl:?s= | inurl:search= | inurl:query= | inurl:lang= | inurl:keyword= inurl:& site:example[.]com

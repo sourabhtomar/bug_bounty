@@ -1,0 +1,5 @@
+go to view page source and search for title
+
+copy the title and go to censys
+
+service.http.response.html_title:"paste title here(eg At&t)"
