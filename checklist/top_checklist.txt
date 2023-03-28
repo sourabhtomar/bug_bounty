@@ -1,0 +1,16 @@
+https://github.com/KathanP19/HowToHunt (checklist for attacks)
+https://github.com/softwaresecured/secure-code-review-checklist
+https://spinthehack.in/bug-hunting-methodology-and-bug-hunting-checklist/
+https://github.com/KathanP19/HowToHunt/blob/master/CheckList/Web_Checklist_by_Chintan_Gurjar.pdf
+https://www.notion.so/spinthehack/
+Checklist-2-After-Recon-Deep-Inside-6a2d8c280a28498d8ad7c38568603b2d
+https://alike-lantern-72d.notion.site/Web-Application-Penetration-Testing-Checklist-4792d95add7d4ffd85dd50a5f50659c6
+https://pentestbook.six2dez.com/others/web-checklist
+https://pentester.land/cheatsheets/2018/11/14/subdomains-enumeration-cheatsheet.html
+https://github.com/EdOverflow/bugbounty-cheatsheet/tree/master/cheatsheets
+https://pentestbook.six2dez.com/enumeration/webservices/oauth#bugs
+https://maikroservice.notion.site/Application-Testing-by-JHaddix-3f51b5832c4445ffa1e04cf8889f62c8
+https://hariprasaanth.notion.site/hariprasaanth/WEB-APPLICATION-PENTESTING-CHECKLIST-0f02d8074b9d4af7b12b8da2d46ac998 (much awaited checklist)
+https://book.hacktricks.xyz/pentesting-web/oauth-to-account-takeover
+https://www.bugbountyhunter.com/methodology/zseanos-methodology.pdf
+https://medium.com/@cc1h2e1/bug-bounty-check-list-by-c1-2beb7ae3c116
