@@ -1,0 +1,17 @@
+HTML injection into emails is dangerous!
+
+    Your users are at risk when a hacker is able to take control of the emails that your applications send, but what's especially dangerous is that the emails will be coming from your company email address.
+    When a malicious email comes from your company email, it looks a lot more legitimate.
+
+How to prevent HTML injection into emails:
+To stop malicious users from injecting HTML into emails, you can employ the same techniques that you would use to prevent XSS:
+
+        Don't embed user input into emails if you don't have to.
+        If you have to embed user input, ALWAYS HTML-encode the user input before embedding it into emails.
+        Additionally, you can detect malicious input using regular expressions or other techniques, and reject the request.
+
+Thanks and have a nice day!
+
+'()"<img src=x ><a href="https://evil.com">click</a>
+
+https://systemweakness.com/story-about-escalation-of-html-injection-to-ec2-instance-credentials-leak-e2cbd7343a83

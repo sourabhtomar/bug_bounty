@@ -1,0 +1,30 @@
+
+
+Three types 
+
+1-Unauthenticated 
+
+. Lack of/missing authentication
+. You can access a resource without being logged in
+
+2-Authenticated
+
+. BOLA
+. You can access a resource, while being logged in but where the resource belongs to another user.
+
+3-Permission
+
+.Broken function level authorization
+
+.You can access a resource, while logged in but where the resource requires a greater level of access than you have
+
+ (best article on IDOR)
+
+   
+ ---------------------IDOR tagdi trick---------------------------------
+    Click the button for show_receipt.aspx?id=32423423 request on the page and intercept the request via Burp.
+    Send request to the repeater.
+    Forward held show_receipt.aspx?id=32423423 request from proxy and intercept receipt_success.aspx request. Hold it.
+    Return to the repeater and change id parameter to other users as show_receipt.aspx?id=32423424. Do not follow redirection from the repeater.
+    Now forward the held receipt_success.aspx and cross your fingers.
+------------------------------------------------------------------

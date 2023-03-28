@@ -1,0 +1,21 @@
+I wanted a way to collect all of these in a big file, so I wrote a quick and dirty python script called burplist.py to extract these words and add them to a wordlist:
+
+https://gist.github.com/bendtheory/1129e85e578f25fa9056520fded66352
+
+This script works, but it’s pretty bad, written in python 2, and needs some love. I’ll hopefully end up re-writing it in Python3 or building a burp extension at some point in the future. (Or maybe you will! Time will tell!)
+
+Here’s what I do to generate a bangin’ custom wordlist:
+
+    Change the filter settings in Proxy History to remove all binary and image files
+    Select a request, hit ctrl-A, right click, and select Save Items in the context menu. I save this as an XML file and keep the “Base64-encode requests and responses” options checked
+    Run the script like so: python burplist.py burprequests.xml
+    Use the clean_wordlist.sh script made by @BonJarber to remove junk words and nonsense
+    Optimization tricks to clean the wordlist further include:
+    - Remove all words with numbers
+    - Convert to lowercase and remove duplicates (check if you target responds to upper case and lower case paths in the same way)
+    - Tweak proxy history and scope to contain more specifically targeted endpoints and domains (i.e. only JavaScript files)
+
+After all this, you’ll have a sweet, fully customized wordlist tailored specifically for your target.
+
+
+https://bendtheory.medium.com/finding-and-exploiting-unintended-functionality-in-main-web-app-apis-6eca3ef000af

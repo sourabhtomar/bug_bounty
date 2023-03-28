@@ -1,0 +1,10 @@
+   X-Original-Url:
+   X-Forwarded-Server:
+   X-Host:
+   X-Forwarded-**Host**:
+   X-Rewrite-Url:
+   X-Originating-IP: IP
+   X-Forwarded-For: IP
+   X-Remote-Addr: IP
+   X-Client-IP: IP
+   X-Forwarded-Host:

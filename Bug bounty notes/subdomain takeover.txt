@@ -1,0 +1,10 @@
+ping.eu----> best website
+https://0xpatrik.com/subdomain-takeover-providers/
+https://toolbox.googleapps.com/apps/dig/#CNAME/
+
+https://blog.securitybreached.org/2018/09/24/subdomain-takeover-via-unsecured-s3-bucket/(highly recommend to read and execute)
+
+vihol64529@submic.com
+I@mha006
+
+Very simple open redirect made more impactful by the lack of filtering javascript URIs. Thanks again to the Twitter team for a quick response/bounty!

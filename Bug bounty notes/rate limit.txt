@@ -1,0 +1,21 @@
+Developers often use rate limits to control the number of requests per user. Basically, the rate limit is used to control the rate of traffic sent or received on the network.
+
+Before we jump into bypass, let's dig into places where we can find it.
+
+· Login
+
+· Reset Password
+
+· 2FA/OTP
+
+· Sign up
+
+· Sending messages, Pin code, Forums, comments, and coupon codes, etc.
+
+Using null byte and CRLF (a tip from Zseano)
+
+%00, %0d%0a, %09, %0C, %20, %0
+
+
+
+ipg.s0urabhsingh

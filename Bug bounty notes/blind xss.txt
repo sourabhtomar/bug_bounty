@@ -1,0 +1,2 @@
+An attacker appears to be able to send an XSS payload to Twitter staff members, using a Support Form. This XSS payload will execute in the context of an internal subdomain, allowing it to exfiltrate sensitive internal Twitter information.
+Timeline · export

