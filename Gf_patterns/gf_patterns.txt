@@ -1,0 +1,7 @@
+https://github.com/bugcrowd/HUNT/blob/master/Burp/conf/issues.json
+
+https://github.com/lutfumertceylan/top25-parameter/tree/master/gf-patterns
+https://github.com/1ndianl33t/Gf-Patterns
+https://github.com/emadshanab/Gf-Patterns-Collection
+https://github.com/mrofisr/gf-patterns
+https://github.com/robre/gf-patterns
