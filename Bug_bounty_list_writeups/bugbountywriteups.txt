@@ -1,4 +1,4 @@
-[https://hackingblogs.com/list-bug-bounty-writeups/](https://hackingblogs.com/list-bug-bounty-writeups/)
+https://hackingblogs.com/list-bug-bounty-writeups/
 https://github.com/alexbieber/Bug_Bounty_writeups
 https://github.com/6vr/Bug-Bounty-Tips
 https://github.com/sh377c0d3/Payloads
