@@ -1,0 +1,19 @@
+https://hackingblogs.com/list-bug-bounty-writeups/
+https://github.com/alexbieber/Bug_Bounty_writeups
+https://github.com/6vr/Bug-Bounty-Tips
+https://github.com/sh377c0d3/Payloads
+https://github.com/Proviesec/directory-payload-list
+https://bugreader.com/reports
+https://github.com/seeu-inspace/easyg
+https://github.com/qazbnm456/awesome-web-security
+https://medium.com/@omaikomark/bug-bounty-tips-6b8e522b9c54
+https://sidxparab.medium.com/best-bugbounty-recon-toolebe635d3b363-ebe635d3b363
+https://medium.com/@Sm9l/bug-bounty-fingerprinting-204506945ab
+https://blog.projectdiscovery.io/building-one-shot-recon/
+https://twitter.com/intigriti/status/1584872260699324416(quick recon)
+https://securib.ee/beelog/the-best-bug-bounty-recon-methodology/
+https://infosecsanyam.medium.com/bug-bounty-methodology-ttp-tactics-techniques-and-procedures-v-2-0-2ccd9d7eb2e2
+how-i-found-multiple-bugs-on-facebook-in-1-month-and-a-part-for-my-methodology-tools-58a677a9040c
+https://github.com/seeu-inspace/easyg
+https://sidxparab.gitbook.io/subdomain-enumeration-guide/automation
+https://thehackerstuff.com/oneliner-scripts-for-bug-hunters/
