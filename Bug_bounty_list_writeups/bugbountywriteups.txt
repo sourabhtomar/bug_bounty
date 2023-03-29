@@ -17,3 +17,4 @@ how-i-found-multiple-bugs-on-facebook-in-1-month-and-a-part-for-my-methodology-t
 https://github.com/seeu-inspace/easyg
 https://sidxparab.gitbook.io/subdomain-enumeration-guide/automation
 https://thehackerstuff.com/oneliner-scripts-for-bug-hunters/
+https://github.com/NafisiAslH/KnowledgeSharing/tree/main/CyberSecurity/Web/100BugBountySecrets
